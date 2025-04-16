@@ -1,0 +1,77 @@
+{
+    "name": "Woods Ventusss",
+    "role": "Desenvolvedor Full Stack",
+    "role2": "C# | React",
+    "skills": [
+      "C# / Dotnet Core / ASP.NET Core",
+      "React",
+      "PostgreSQL",
+      "Linux",
+      "Docker",
+      "Git / GitHub"
+    ],
+    "location": "Cuiabá - MT - BRA",
+    "linkedin": "https://www.linkedin.com/in/woodsventusss/",
+    "github": "https://github.com/woodsventusss",
+    "phone": "(11) 99999-9999",
+    "email": "FZ0iR@example.com",
+    "companies": [
+        {
+            "name": "Company A",
+            "roles": [
+                {
+                "role": "Role A",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Description of Role A"
+                },
+                {
+                    "role": "Role A",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": "Description of Role A"
+                }
+            ]
+        },
+        {
+            "name": "Company B",
+            "roles": [
+                {
+                "role": "Role A",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Description of Role A"
+                },
+                {
+                    "role": "Role A",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": "Description of Role A"
+                }
+            ]
+        }
+    ],
+    "educations": [
+        {
+            "school": "UFMT - Universidade Federal de Mato Grosso",
+            "degree": "Graduação em Sistemas de Informação - Bacharel",
+            "start": "2018-01-01",
+            "end": "2018-06-30",
+            "description": "Description of Education A"
+        },
+        {
+            "school": "UFMT - Universidade Federal de Mato Grosso",
+            "degree": "Pós Graduação Lato Sensu em Banco de Dados",
+            "start": "2022-01-01",
+            "end": "2022-06-30",
+            "description": "Description of Education B"
+        },
+        {
+            "school": "UFV - Universidade Federal de Viçosa",
+            "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
+            "start": "2022-01-01",
+            "end": "2022-06-30",
+            "description": "Description of Education B"
+        }
+    ]
+}

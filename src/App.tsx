@@ -15,25 +15,37 @@ import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 
+import Print from "./components/Print";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Sponsors />
-      <About />
-      <HowItWorks />
-      <Features />
-      <Services />
-      <Cta />
-      <Testimonials />
-      <Team />
-      <Pricing />
-      <Newsletter />
-      <FAQ />
-      <Footer />
-      <ScrollToTop />
-    </>
+    <Router>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Navbar />
+            <Hero />
+            <Sponsors />
+            <About />
+            <HowItWorks />
+            <Features />
+            <Services />
+            <Cta />
+            <Testimonials />
+            <Team />
+            <Pricing />
+            <Newsletter />
+            <FAQ />
+            <Footer />
+            <ScrollToTop />
+          </>
+        } /> 
+        <Route path="/Print" element={<Print />} /> {/* Página de logs */}
+      </Routes>
+    </div>
+  </Router>
   );
 }
 
