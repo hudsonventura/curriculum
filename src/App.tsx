@@ -107,7 +107,7 @@ function App() {
 							{/* <Pricing curriculum={curriculum} /> */}
 							{/* <Newsletter curriculum={curriculum} /> */}
 							{/* <FAQ curriculum={curriculum} /> */}
-							<Services curriculum={curriculum} />
+							{/* <Services curriculum={curriculum} /> */}
 							<Footer curriculum={curriculum} />
 							<ScrollToTop curriculum={curriculum} /> 
 						</>
