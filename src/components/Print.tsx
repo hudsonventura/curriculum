@@ -1,6 +1,6 @@
 import { PDFViewer, Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-import curriculumJSONFile from '../../curriculum.json';
-import { Curriculum } from './Curriculum';
+import { Curriculum } from '../components/Curriculum';
+
 
 
 const styles = StyleSheet.create({
@@ -90,10 +90,9 @@ const styles = StyleSheet.create({
     },
 });
 
-function Print() {
+function Print({curriculum} : Curriculum) {
 
-    const curriculum: Curriculum = curriculumJSONFile;
-    console.log(curriculum)
+
 
     return (
         <div className="w-full h-screen">

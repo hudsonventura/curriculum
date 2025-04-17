@@ -18,35 +18,42 @@ import "./App.css";
 import Print from "./components/Print";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import curriculumJSONFile from '../curriculum.json';
+import { Curriculum } from './components/Curriculum';
+
 function App() {
-  return (
-    <Router>
-    <div className="App">
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Navbar />
-            <Hero />
-            <Sponsors />
-            <About />
-            <HowItWorks />
-            <Features />
-            <Services />
-            <Cta />
-            <Testimonials />
-            <Team />
-            <Pricing />
-            <Newsletter />
-            <FAQ />
-            <Footer />
-            <ScrollToTop />
-          </>
-        } /> 
-        <Route path="/Print" element={<Print />} /> {/* Página de logs */}
-      </Routes>
-    </div>
-  </Router>
-  );
+
+	const curriculum: Curriculum = curriculumJSONFile;
+	
+
+	return (
+		<Router>
+			<div className="App">
+				<Routes>
+					<Route path="/" element={
+						<>
+							<Navbar curriculum={curriculum} />
+							<Hero curriculum={curriculum} />
+							<Sponsors curriculum={curriculum} />
+							<About curriculum={curriculum} />
+							<HowItWorks curriculum={curriculum} />
+							<Features curriculum={curriculum} />
+							<Services curriculum={curriculum} />
+							<Cta curriculum={curriculum} />
+							<Testimonials curriculum={curriculum} />
+							<Team curriculum={curriculum} />
+							<Pricing curriculum={curriculum} />
+							<Newsletter curriculum={curriculum} />
+							<FAQ curriculum={curriculum} />
+							<Footer curriculum={curriculum} />
+							<ScrollToTop curriculum={curriculum} />
+						</>
+					} />
+					<Route path="/Print" element={<Print curriculum={curriculum} />} /> {/* Página de logs */}
+				</Routes>
+			</div>
+		</Router>
+	)
 }
 
 export default App;

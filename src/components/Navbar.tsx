@@ -17,6 +17,12 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
+import { Curriculum } from "./Curriculum";
+import { RiPrinterLine } from "react-icons/ri";
+
+import { IoPersonCircle } from "react-icons/io5";
+
+
 
 interface RouteProps {
   href: string;
@@ -42,7 +48,7 @@ const routeList: RouteProps[] = [
   },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({curriculum} : Curriculum) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
@@ -54,8 +60,8 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              <IoPersonCircle className="h-7 w-7" />
+              {curriculum.name}
             </a>
           </NavigationMenuItem>
 
@@ -79,7 +85,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    {curriculum.name}
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -129,12 +135,12 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="/Print"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              <RiPrinterLine className="mr-2 w-5 h-5" />
+              Imprimir
             </a>
 
             <ModeToggle />

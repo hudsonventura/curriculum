@@ -6,7 +6,7 @@
       "C# / Dotnet Core / ASP.NET Core",
       "React",
       "PostgreSQL",
-      "Linux",
+      "GNU Linux",
       "Docker",
       "Git / GitHub"
     ],
@@ -73,5 +73,6 @@
             "end": "2022-06-30",
             "description": "Description of Education B"
         }
-    ]
+    ],
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisi sit amet vulputate eleifend, nunc lectus dignissim lacus, ut convallis nisi metus non tellus. Sed eu lectus ut nunc maximus malesuada. Nulla facilisi. Suspendisse potenti. Sed euismod, lectus sit amet malesuada convallis, justo nunc eleifend ex, ut ultrices nunc sem et lacus. Nullam quis tellus nec nibh sodales convallis. Sed ut nulla sit amet nunc convallis ultrices. Nullam quis tellus nec nibh sodales convallis. Sed ut nulla sit amet nunc convallis ultrices."
 }

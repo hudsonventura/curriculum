@@ -1,4 +1,4 @@
-type Curriculum = {
+export type Curriculum = {
   name: string;
   role: string;
   role2: string;
