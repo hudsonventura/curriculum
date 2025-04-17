@@ -1,5 +1,6 @@
 {
     "name": "Woods Ventusss",
+    "birth_date": "2000-01-01",
     "role": "Desenvolvedor Full Stack",
     "role2": "C# | React",
     "skills": [
@@ -51,6 +52,7 @@
             ]
         }
     ],
+    "education_level": "Pós Graduação",
     "educations": [
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
@@ -74,5 +76,9 @@
             "description": "Description of Education B"
         }
     ],
-    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisi sit amet vulputate eleifend, nunc lectus dignissim lacus, ut convallis nisi metus non tellus. Sed eu lectus ut nunc maximus malesuada. Nulla facilisi. Suspendisse potenti. Sed euismod, lectus sit amet malesuada convallis, justo nunc eleifend ex, ut ultrices nunc sem et lacus. Nullam quis tellus nec nibh sodales convallis. Sed ut nulla sit amet nunc convallis ultrices. Nullam quis tellus nec nibh sodales convallis. Sed ut nulla sit amet nunc convallis ultrices."
+    "about": [
+        "Adepto a tecnologias, Linux e ao open source. Conheço e já utilizei um pouco das tecnologias: Ubuntu, CentOS, Docker, Docker Swarm, Docker Compose, WSL2, Apache, IIS, ActiveDiretory / LDAP, Windows Server, MySQL, SQL Server, Zabbix, PRTG, Kong e Konga, NGINX, Let's Encrypt, VeraCrypt, Hyper-V, Proxmox, VirtualBox, VMWare, Linux KVM, Oracle Cloud, Oracle DB, Xamarin e Xamarin Forms, Arduino e NodeMCU, Redis, e por fim, meu mais novo xodozinho, o React.",
+        "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas."
+    ]
+
 }

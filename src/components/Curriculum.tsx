@@ -9,6 +9,8 @@ export type Curriculum = {
   github: string;
   companies: Company[];
   educations: Education[];
+  education_level: string;
+  birth_date: Date;
 }
 
 type Company = {

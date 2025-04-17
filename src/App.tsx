@@ -21,21 +21,28 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import curriculumJSONFile from '../curriculum.json';
 import { Curriculum } from './components/Curriculum';
 import { useEffect, useState } from "react";
+import { Respositories } from "./components/Repositories";
 
 function App() {
 
 	const curriculum: Curriculum = curriculumJSONFile;
 
 
-    const [repos, setRepos] = useState([]);
-	const [followers, setFolowers] = useState([]);
-	const [nugetLibs, setNugetLibs] = useState([]);
+
+    const [repos, setRepos] = useState<Respositories>( {
+		github: [],
+		folower: [],
+		NugetLibs: [],
+		nugetProfile: []
+	});
+
     useEffect(() => {
         const fetchRepos = async () => {
             try {
                 const response = await fetch("https://api.github.com/users/hudsonventura/repos?sort=pushed&direction=desc");
                 const data = await response.json();
-                setRepos(data);
+				repos.github = data
+                setRepos(repos);
             } catch (error) {
                 console.error("Error fetching repos:", error);
             }
@@ -45,7 +52,8 @@ function App() {
             try {
                 const response = await fetch("https://api.github.com/users/hudsonventura/followers");
                 const data = await response.json();
-                setFolowers(data);
+				repos.folower = data
+                setRepos(repos);
             } catch (error) {
                 console.error("Error fetching repos:", error);
             }
@@ -55,7 +63,19 @@ function App() {
             try {
                 const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
                 const data = await response.json();
-                setNugetLibs(data);
+				repos.NugetLibs = data
+                setRepos(repos);
+            } catch (error) {
+                console.error("Error fetching repos:", error);
+            }
+        };
+		
+		const fetchNugetLibsProfile = async () => {
+            try {
+                const response = await fetch("https://api-v2v3search-0.nuget.org/query?q=owner:hudsonventura");
+                const data = await response.json();
+				repos.nugetProfile = data
+                setRepos(repos);
             } catch (error) {
                 console.error("Error fetching repos:", error);
             }
@@ -64,6 +84,7 @@ function App() {
         fetchRepos();
         fetchFolowers();
         fetchNugetLibs();
+		fetchNugetLibsProfile();
     }, []);
 
 	return (
@@ -74,9 +95,9 @@ function App() {
 						<>
 							<Navbar curriculum={curriculum} />
 							<Hero curriculum={curriculum} />
-							<Sponsors curriculum={curriculum} />
-							<About curriculum={curriculum} repos={repos} followers={followers} nugetLibs={nugetLibs}/>
-							<HowItWorks curriculum={curriculum} />
+							{/* <Sponsors curriculum={curriculum} /> */}
+							<About curriculum={curriculum} />
+							<HowItWorks curriculum={curriculum} repos={repos} />
 							<Features curriculum={curriculum} />
 							<Services curriculum={curriculum} />
 							<Cta curriculum={curriculum} />
