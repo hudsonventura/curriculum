@@ -20,11 +20,51 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import curriculumJSONFile from '../curriculum.json';
 import { Curriculum } from './components/Curriculum';
+import { useEffect, useState } from "react";
 
 function App() {
 
 	const curriculum: Curriculum = curriculumJSONFile;
-	
+
+
+    const [repos, setRepos] = useState([]);
+	const [followers, setFolowers] = useState([]);
+	const [nugetLibs, setNugetLibs] = useState([]);
+    useEffect(() => {
+        const fetchRepos = async () => {
+            try {
+                const response = await fetch("https://api.github.com/users/hudsonventura/repos?sort=pushed&direction=desc");
+                const data = await response.json();
+                setRepos(data);
+            } catch (error) {
+                console.error("Error fetching repos:", error);
+            }
+        };
+		
+		const fetchFolowers = async () => {
+            try {
+                const response = await fetch("https://api.github.com/users/hudsonventura/followers");
+                const data = await response.json();
+                setFolowers(data);
+            } catch (error) {
+                console.error("Error fetching repos:", error);
+            }
+        };
+		
+		const fetchNugetLibs = async () => {
+            try {
+                const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
+                const data = await response.json();
+                setNugetLibs(data);
+            } catch (error) {
+                console.error("Error fetching repos:", error);
+            }
+        };
+
+        fetchRepos();
+        fetchFolowers();
+        fetchNugetLibs();
+    }, []);
 
 	return (
 		<Router>
@@ -35,7 +75,7 @@ function App() {
 							<Navbar curriculum={curriculum} />
 							<Hero curriculum={curriculum} />
 							<Sponsors curriculum={curriculum} />
-							<About curriculum={curriculum} />
+							<About curriculum={curriculum} repos={repos} followers={followers} nugetLibs={nugetLibs}/>
 							<HowItWorks curriculum={curriculum} />
 							<Features curriculum={curriculum} />
 							<Services curriculum={curriculum} />

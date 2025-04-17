@@ -1,25 +1,30 @@
-export const Statistics = () => {
+export const Statistics = ({repos, followers,nugetLibs}) => {
   interface statsProps {
     quantity: string;
     description: string;
   }
 
+    console.log(nugetLibs)
   const stats: statsProps[] = [
     {
-      quantity: "2.7K+",
-      description: "Users",
+      quantity: isNaN(repos?.length) ? 0 : repos?.length || 0,
+      description: "Públic Respositories",
     },
     {
-      quantity: "1.8K+",
+      quantity: isNaN(followers?.length) ? 0 : followers?.length || 0,
       description: "Subscribers",
     },
     {
-      quantity: "112",
-      description: "Downloads",
+      quantity: nugetLibs && nugetLibs.data && nugetLibs.data.length > 0
+        ? isNaN(nugetLibs.data[0].totalDownloads)
+          ? 0
+          : nugetLibs.data[0].totalDownloads
+        : 0,
+      description: "Nuget Downloads",
     },
     {
       quantity: "4",
-      description: "Products",
+      description: "Pypi Downloads",
     },
   ];
 

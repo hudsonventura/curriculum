@@ -2,7 +2,9 @@ import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
 import { Curriculum } from "./Curriculum";
 
-export const About = ({curriculum} : Curriculum) => {
+export const About = ({curriculum, repos, followers, nugetLibs} : Curriculum) => {
+
+
   return (
     <section
       id="about"
@@ -28,7 +30,7 @@ export const About = ({curriculum} : Curriculum) => {
               </p>
             </div>
 
-            <Statistics />
+            <Statistics repos={repos} followers={followers} nugetLibs={nugetLibs} />
           </div>
         </div>
       </div>
