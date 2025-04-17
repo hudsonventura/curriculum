@@ -32,8 +32,9 @@ function App() {
     const [repos, setRepos] = useState<Respositories>( {
 		github: [],
 		folower: [],
-		NugetLibs: [],
-		nugetProfile: []
+		nugetLibs: [],
+		nugetProfile: [],
+		pypiLibs: []
 	});
 
     useEffect(() => {
@@ -63,7 +64,7 @@ function App() {
             try {
                 const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
                 const data = await response.json();
-				repos.NugetLibs = data
+				repos.nugetLibs = data
                 setRepos(repos);
             } catch (error) {
                 console.error("Error fetching repos:", error);
@@ -98,16 +99,17 @@ function App() {
 							{/* <Sponsors curriculum={curriculum} /> */}
 							<About curriculum={curriculum} />
 							<HowItWorks curriculum={curriculum} repos={repos} />
-							<Features curriculum={curriculum} />
-							<Services curriculum={curriculum} />
+							{/* <Features curriculum={curriculum} /> */}
+							
 							<Cta curriculum={curriculum} />
-							<Testimonials curriculum={curriculum} />
-							<Team curriculum={curriculum} />
-							<Pricing curriculum={curriculum} />
-							<Newsletter curriculum={curriculum} />
-							<FAQ curriculum={curriculum} />
+							<Testimonials curriculum={curriculum} repos={repos} />
+							{/* <Team curriculum={curriculum} /> */}
+							{/* <Pricing curriculum={curriculum} /> */}
+							{/* <Newsletter curriculum={curriculum} /> */}
+							{/* <FAQ curriculum={curriculum} /> */}
+							<Services curriculum={curriculum} />
 							<Footer curriculum={curriculum} />
-							<ScrollToTop curriculum={curriculum} />
+							<ScrollToTop curriculum={curriculum} /> 
 						</>
 					} />
 					<Route path="/Print" element={<Print curriculum={curriculum} />} /> {/* Página de logs */}

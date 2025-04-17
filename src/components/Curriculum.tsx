@@ -1,12 +1,15 @@
 export type Curriculum = {
   name: string;
   role: string;
+  gravatar: string;
   role2: string;
   email: string;
   phone: string;
   skills: string[];
   linkedin: string;
   github: string;
+  nuget: string;
+  pypi: string;
   companies: Company[];
   educations: Education[];
   education_level: string;

@@ -1,6 +1,7 @@
 export type Respositories = {
 	github: any;
 	folower: any;
-	NugetLibs: any;
+	nugetLibs: any;
 	nugetProfile: any;
+	pypiLibs: any
 }

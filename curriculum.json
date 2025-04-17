@@ -1,8 +1,8 @@
 {
     "name": "Woods Ventusss",
-    "birth_date": "2000-01-01",
+    "gravatar": "https://1.gravatar.com/userimage/240983322/ad274aec0e65870b1d4d23edc5c3b076?size=600",
     "role": "Desenvolvedor Full Stack",
-    "role2": "C# | React",
+    "role2": "C# | React | PostgreSQL | GNU Linux",
     "skills": [
       "C# / Dotnet Core / ASP.NET Core",
       "React",
@@ -14,6 +14,8 @@
     "location": "Cuiabá - MT - BRA",
     "linkedin": "https://www.linkedin.com/in/woodsventusss/",
     "github": "https://github.com/woodsventusss",
+    "nuget": "https://www.nuget.org/profiles/hudsonventura",
+    "pypi": "https://pypi.org/user/hudsonventura",
     "phone": "(11) 99999-9999",
     "email": "FZ0iR@example.com",
     "companies": [
