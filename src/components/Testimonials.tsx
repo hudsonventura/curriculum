@@ -70,12 +70,12 @@ export const Testimonials = ({ repos }: Repositories) => {
 			className="container py-24 sm:py-32"
 		>
 			<h2 className="text-3xl md:text-4xl font-bold">
-				Veja alguns dos meus
+				Alguns dos meus
 				<span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
 					{" "}
 					repositórios públicos{" "}
 				</span>
-				mais atuais no Github
+				no Github atualizados recentemente
 			</h2>
 
 			<p className="text-xl text-muted-foreground pt-4 pb-8">

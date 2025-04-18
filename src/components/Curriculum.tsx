@@ -16,19 +16,19 @@ export type Curriculum = {
   birth_date: Date;
 }
 
-type Company = {
+export type Company = {
   name: string;
   roles: Roles[];
 }
 
-type Roles = {
+export type Roles = {
     role: string;
     start: Date;
     end: Date;
     description: string;
 }
 
-type Education = {
+export type Education = {
     school: string;
     degree: string;
     start: Date;

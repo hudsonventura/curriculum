@@ -1,4 +1,6 @@
-import { Timeline } from "./timeline";
+import { Curriculum } from "./Curriculum";
+import { Timeline, TimelineCompany } from "./TimelineCompany";
+import { TimelineEducational } from "./TimelineEducational";
 import { Button } from "./ui/button";
 
 const timelineItems: TimelineItem[] = [
@@ -101,7 +103,7 @@ const timelineItems: TimelineItem[] = [
 	},
 ]
 
-export const Cta = () => {
+export const Cta = ({curriculum} : Curriculum) => {
 	return (
 		<>
 			<section id="cta" className="bg-muted/50 py-16 my-24 sm:my-3">
@@ -122,11 +124,11 @@ export const Cta = () => {
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 							<div>
 								<h1 className="text-3xl font-bold mb-8">Expêriencias profissionais</h1>
-								<Timeline items={timelineItems.slice(0, 3)} />
+								<TimelineCompany items={curriculum.companies} />
 							</div>
 							<div>
 							<h1 className="text-3xl font-bold mb-8">Educação</h1>
-								<Timeline items={timelineItems.slice(3)} />
+								<TimelineEducational items={curriculum.educations} />
 							</div>
 						</div>
 					</div>

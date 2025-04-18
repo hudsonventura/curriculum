@@ -20,48 +20,65 @@
     "email": "FZ0iR@example.com",
     "companies": [
         {
-            "name": "Company A",
+            "name": "Amaggi Exp. e Imp. LTDA",
             "roles": [
                 {
-                "role": "Role A",
+                "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Description of Role A"
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend. Forte domínio em criação de APIs, integrações com serviços externos, bancos de dados relacionais e não relacionais, além de boas práticas de versionamento, testes e deploy. Como Analista de Processos BPM, possui vivência no mapeamento, modelagem e automação de processos de negócio, utilizando ferramentas como SoftExpert e notação BPMN. Focado em eficiência, integração entre áreas e entrega de soluções alinhadas às necessidades da organização."
                 },
                 {
-                    "role": "Role A",
+                    "role": "Ténico em Informática",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Description of Role A"
+                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário. Experiência com instalação e configuração de softwares, infraestrutura básica de redes, formatação, backup, segurança da informação e atendimento de chamados. Perfil proativo, com facilidade para resolver problemas técnicos e prestar suporte de forma clara e eficiente."
                 }
             ]
         },
         {
-            "name": "Company B",
+            "name": "Ericsson Gestão e Serviços",
             "roles": [
                 {
-                "role": "Role A",
+                "role": "Técnico em Eletrônica",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Description of Role A"
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend. Forte domínio em criação de APIs, integrações com serviços externos, bancos de dados relacionais e não relacionais, além de boas práticas de versionamento, testes e deploy. Como Analista de Processos BPM, possui vivência no mapeamento, modelagem e automação de processos de negócio, utilizando ferramentas como SoftExpert e notação BPMN. Focado em eficiência, integração entre áreas e entrega de soluções alinhadas às necessidades da organização."
+                }
+            ]
+        },
+        {
+            "name": "TVCA - Televisão Centro América",
+            "roles": [
+                {
+                "role": "Técnico em Eletrônica e Informática",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo o funcionamento e a integração entre tecnologias."
                 },
                 {
-                    "role": "Role A",
+                    "role": "Auxiliar Técnico",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Description of Role A"
+                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
+                },
+                {
+                    "role": "Estagiário em Eletrônica",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": "Apoia na montagem, testes e manutenção de circuitos e equipamentos eletrônicos, auxiliando técnicos e engenheiros em atividades práticas, registros e organização de componentes e ferramentas"
                 }
             ]
         }
     ],
-    "education_level": "Pós Graduação",
+    "education_level": "Pós Graduado",
     "educations": [
         {
-            "school": "UFMT - Universidade Federal de Mato Grosso",
-            "degree": "Graduação em Sistemas de Informação - Bacharel",
-            "start": "2018-01-01",
-            "end": "2018-06-30",
-            "description": "Description of Education A"
+            "school": "UFV - Universidade Federal de Viçosa",
+            "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
+            "start": "2022-01-01",
+            "end": "2022-06-30",
+            "description": "Description of Education B"
         },
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
@@ -71,15 +88,25 @@
             "description": "Description of Education B"
         },
         {
-            "school": "UFV - Universidade Federal de Viçosa",
-            "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
-            "start": "2022-01-01",
-            "end": "2022-06-30",
-            "description": "Description of Education B"
+            "school": "UFMT - Universidade Federal de Mato Grosso",
+            "degree": "Graduação em Sistemas de Informação",
+            "start": "2018-01-01",
+            "end": "2018-06-30",
+            "description": "Description of Education A"
+        },
+        {
+            "school": "IFMT - Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (CEFET)",
+            "degree": "Técnico em Eletrônica",
+            "start": "2008-01-01",
+            "end": "2008-06-30",
+            "description": "Description of Education A"
         }
+        
     ],
     "about": [
-        "Adepto a tecnologias, Linux e ao open source. Conheço e já utilizei um pouco das tecnologias: Ubuntu, CentOS, Docker, Docker Swarm, Docker Compose, WSL2, Apache, IIS, ActiveDiretory / LDAP, Windows Server, MySQL, SQL Server, Zabbix, PRTG, Kong e Konga, NGINX, Let's Encrypt, VeraCrypt, Hyper-V, Proxmox, VirtualBox, VMWare, Linux KVM, Oracle Cloud, Oracle DB, Xamarin e Xamarin Forms, Arduino e NodeMCU, Redis, e por fim, meu mais novo xodozinho, o React.",
+        "Desenvolvedor Full Stack usando C#/ASP.Net Core e React", 
+        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# e .NET Core, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, versionamento com Git, consumo de APIs, integração contínua e testes automatizados. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
+        "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, incluindo: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis.",
         "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas."
     ]
 

@@ -14,30 +14,21 @@ export const Footer = ({ curriculum }: Curriculum) => {
 					<div>
 						<a
 							rel="noreferrer noopener"
-							href="#"
+							href={curriculum.github}
 							className="opacity-60 hover:opacity-100"
 						>
 							Github
 						</a>
 					</div>
 
-					<div>
-						<a
-							rel="noreferrer noopener"
-							href="#"
-							className="opacity-60 hover:opacity-100"
-						>
-							Twitter
-						</a>
-					</div>
 
 					<div>
 						<a
 							rel="noreferrer noopener"
-							href="#"
+							href={curriculum.linkedin}
 							className="opacity-60 hover:opacity-100"
 						>
-							Dribbble
+							LinkedIn
 						</a>
 					</div>
 				</div>
@@ -56,15 +47,7 @@ export const Footer = ({ curriculum }: Curriculum) => {
 
 					</div>
 
-					<div>
-						<a
-							rel="noreferrer noopener"
-							href="#"
-							className="opacity-60 hover:opacity-100"
-						>
-							Desktop
-						</a>
-					</div>
+
 				</div>
 
 
