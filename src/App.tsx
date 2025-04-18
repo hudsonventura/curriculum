@@ -38,55 +38,51 @@ function App() {
 	});
 
     useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const response = await fetch("https://api.github.com/users/hudsonventura/repos?sort=pushed&direction=desc");
-                const data = await response.json();
-				repos.github = data
-                setRepos(repos);
-            } catch (error) {
-                console.error("Error fetching repos:", error);
-            }
-        };
-		
+		const fetchRepos = async () => {
+			try {
+				const response = await fetch("https://api.github.com/users/hudsonventura/repos?sort=pushed&direction=desc");
+				const data = await response.json();
+				setRepos(prev => ({ ...prev, github: data }));
+			} catch (error) {
+				console.error("Error fetching repos:", error);
+			}
+		};
+	
 		const fetchFolowers = async () => {
-            try {
-                const response = await fetch("https://api.github.com/users/hudsonventura/followers");
-                const data = await response.json();
-				repos.folower = data
-                setRepos(repos);
-            } catch (error) {
-                console.error("Error fetching repos:", error);
-            }
-        };
-		
+			try {
+				const response = await fetch("https://api.github.com/users/hudsonventura/followers");
+				const data = await response.json();
+				setRepos(prev => ({ ...prev, folower: data }));
+			} catch (error) {
+				console.error("Error fetching followers:", error);
+			}
+		};
+	
 		const fetchNugetLibs = async () => {
-            try {
-                const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
-                const data = await response.json();
-				repos.nugetLibs = data
-                setRepos(repos);
-            } catch (error) {
-                console.error("Error fetching repos:", error);
-            }
-        };
-		
+			try {
+				const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
+				const data = await response.json();
+				setRepos(prev => ({ ...prev, nugetLibs: data }));
+			} catch (error) {
+				console.error("Error fetching NuGet libs:", error);
+			}
+		};
+	
 		const fetchNugetLibsProfile = async () => {
-            try {
-                const response = await fetch("https://api-v2v3search-0.nuget.org/query?q=owner:hudsonventura");
-                const data = await response.json();
-				repos.nugetProfile = data
-                setRepos(repos);
-            } catch (error) {
-                console.error("Error fetching repos:", error);
-            }
-        };
-
-        fetchRepos();
-        fetchFolowers();
-        fetchNugetLibs();
+			try {
+				const response = await fetch("https://api-v2v3search-0.nuget.org/query?q=owner:hudsonventura");
+				const data = await response.json();
+				setRepos(prev => ({ ...prev, nugetProfile: data }));
+			} catch (error) {
+				console.error("Error fetching NuGet profile:", error);
+			}
+		};
+	
+		fetchRepos();
+		fetchFolowers();
+		fetchNugetLibs();
 		fetchNugetLibsProfile();
-    }, []);
+	}, []);
 
 	return (
 		<Router>

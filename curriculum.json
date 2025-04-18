@@ -4,12 +4,34 @@
     "role": "Desenvolvedor Full Stack",
     "role2": "C# | React | PostgreSQL | GNU Linux",
     "skills": [
-      "C# / Dotnet Core / ASP.NET Core",
-      "React",
-      "PostgreSQL",
-      "GNU Linux",
-      "Docker",
-      "Git / GitHub"
+        {
+            "name": "C# / Dotnet Core / ASP.NET Core",
+            "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png"
+        },
+        {
+            "name": "React",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
+        },
+        {
+            "name": "GNU Linux",
+            "icon": "https://media.licdn.com/dms/image/C4E12AQELA0zJ-sxYxw/article-cover_image-shrink_600_2000/0/1575141578855?e=2147483647&v=beta&t=aRiIFIShe3jRnpnMkeDaEcepkWPXGwkDvjjOR7qyYNM"
+        },
+        {
+            "name": "Docker",
+            "icon": "https://logopng.com.br/logos/docker-27.png"
+        },
+        {
+            "name": "Git / GitHub",
+            "icon": "https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png"
+        },
+        {
+            "name": "Python",
+            "icon": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"
+        }
     ],
     "location": "Cuiabá - MT - BRA",
     "linkedin": "https://www.linkedin.com/in/woodsventusss/",
@@ -26,13 +48,13 @@
                 "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend. Forte domínio em criação de APIs, integrações com serviços externos, bancos de dados relacionais e não relacionais, além de boas práticas de versionamento, testes e deploy. Como Analista de Processos BPM, possui vivência no mapeamento, modelagem e automação de processos de negócio, utilizando ferramentas como SoftExpert e notação BPMN. Focado em eficiência, integração entre áreas e entrega de soluções alinhadas às necessidades da organização."
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend."
                 },
                 {
                     "role": "Ténico em Informática",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário. Experiência com instalação e configuração de softwares, infraestrutura básica de redes, formatação, backup, segurança da informação e atendimento de chamados. Perfil proativo, com facilidade para resolver problemas técnicos e prestar suporte de forma clara e eficiente."
+                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
                 }
             ]
         },
@@ -43,7 +65,7 @@
                 "role": "Técnico em Eletrônica",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend. Forte domínio em criação de APIs, integrações com serviços externos, bancos de dados relacionais e não relacionais, além de boas práticas de versionamento, testes e deploy. Como Analista de Processos BPM, possui vivência no mapeamento, modelagem e automação de processos de negócio, utilizando ferramentas como SoftExpert e notação BPMN. Focado em eficiência, integração entre áreas e entrega de soluções alinhadas às necessidades da organização."
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend."
                 }
             ]
         },

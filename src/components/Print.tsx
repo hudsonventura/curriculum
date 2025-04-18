@@ -113,8 +113,8 @@ function Print({curriculum} : Curriculum) {
                             <View style={styles.divider} />
                             <Text style={styles.sectionTitle}>Skills</Text>
                             {
-                                curriculum.skills.map((skill, index) => (
-                                    <Text key={index} style={styles.text}>{skill}</Text>
+                                curriculum.skills.map(({name, icon}, index) => (
+                                    <Text key={index} style={styles.text}>{name}</Text>
                                 ))
                             }
                         </View>
