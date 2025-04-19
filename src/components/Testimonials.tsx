@@ -85,12 +85,11 @@ export const Testimonials = ({ repos }: Repositories) => {
 			<div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
 				{console.log(repos.github)} 
 				{repos.github
-					.slice()
 					.sort((a, b) =>
-						new Date(b.updated_at).getTime() -
-						new Date(a.updated_at).getTime()
+						new Date(b.pushed_at).getTime() -
+						new Date(a.pushed_at).getTime()
 					)
-					.slice(0, 7)
+					.slice(0, 9)
 					.map(
 					(repo, index) => (
 						<Card

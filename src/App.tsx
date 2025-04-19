@@ -47,7 +47,7 @@ function App() {
     useEffect(() => {
 		const fetchRepos = async () => {
 			try {
-				const response = await fetch("https://api.github.com/users/hudsonventura/repos?sort=pushed&direction=desc");
+				const response = await fetch("https://api.github.com/users/hudsonventura/repos");
 				const data = await response.json();
 				setRepos(prev => ({ ...prev, github: data }));
 			} catch (error) {
