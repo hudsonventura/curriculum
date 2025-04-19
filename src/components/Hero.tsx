@@ -8,6 +8,7 @@ export const Hero = ({ curriculum }: Curriculum) => {
 	return (
 		<section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-9 gap-10">
 			<div className="text-center lg:text-start space-y-6">
+				<h1>{curriculum.hello_message}</h1>
 				<main className="text-2xl md:text-2xl font-bold">
 					<h1 className="inline">
 						{curriculum.role}
@@ -21,7 +22,7 @@ export const Hero = ({ curriculum }: Curriculum) => {
 					</h2>
 					
 				</main>
-				<h1>{curriculum.hello_message}</h1>
+				
 
 
 				{/* <div className="space-y-4 md:space-y-0 md:space-x-4">
