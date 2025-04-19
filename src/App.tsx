@@ -23,6 +23,9 @@ import { Curriculum } from './components/Curriculum';
 import { useEffect, useState } from "react";
 import { Respositories } from "./components/Repositories";
 
+import ConstellationBackground from './components/ConstellationBackground';
+
+
 function App() {
 
 	const curriculum: Curriculum = curriculumJSONFile;
@@ -110,6 +113,7 @@ function App() {
 							{/* <Services curriculum={curriculum} /> */}
 							<Footer curriculum={curriculum} />
 							<ScrollToTop curriculum={curriculum} /> 
+							<ConstellationBackground />
 						</>
 					} />
 					<Route path="/Print" element={<Print curriculum={curriculum} />} /> {/* Página de logs */}
