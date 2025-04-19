@@ -28,7 +28,7 @@ export const Newsletter = () => {
         >
           <Input
             placeholder="leomirandadev@gmail.com"
-            className="bg-muted/50 dark:bg-muted/80 "
+            className="bg-muted/80 dark:bg-muted/80 "
             aria-label="email"
           />
           <Button>Subscribe</Button>

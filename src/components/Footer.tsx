@@ -1,42 +1,26 @@
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { Curriculum } from "./Curriculum";
 import { LogoIcon } from "./Icons";
+import { SiGmail } from "react-icons/si";
 
 export const Footer = ({ curriculum }: Curriculum) => {
 	return (
 		<footer id="footer">
 			<hr className="w-11/12 mx-auto" />
 
-			<section className="container py-20 grid grid-cols-2 md:grid-cols- xl:grid-cols-4 gap-x-12 gap-y-8">
+			<section className="container py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-8">
 
 
 				<div className="flex flex-col gap-2">
 					<h3 className="font-bold text-lg">Mídias Sociais</h3>
-					<div>
-						<a
-							rel="noreferrer noopener"
-							href={curriculum.github}
-							className="opacity-60 hover:opacity-100"
-						>
-							Github
-						</a>
-					</div>
-
-
-					<div>
-						<a
-							rel="noreferrer noopener"
-							href={curriculum.linkedin}
-							className="opacity-60 hover:opacity-100"
-						>
-							LinkedIn
-						</a>
-					</div>
+					<div className="flex items-center"><a target="_blank" href={curriculum.github} ><FaGithub className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.github}</span></div>
+					<div className="flex items-center"><a target="_blank" href={curriculum.linkedin}><FaLinkedin className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.linkedin}</span></div>
 				</div>
 
 				<div className="flex flex-col gap-2">
 					<h3 className="font-bold text-lg">Contato</h3>
-					<div>WhatsApp: {curriculum.phone}</div>
-					<div>Email: {curriculum.email}</div>
+					<div className="flex items-center"><a target="_blank" href={`https://api.whatsapp.com/send?phone=${curriculum.phone}&text=Hi there, I would like to talk to you!`} ><FaWhatsapp className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.phone}</span></div>
+					<div className="flex items-center"><a target="_blank" href={`mailto:${curriculum.email}`}><SiGmail className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.email}</span></div>
 				</div>
 
 

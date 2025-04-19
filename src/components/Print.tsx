@@ -2,7 +2,6 @@ import { PDFViewer, Document, Page, Text, View, StyleSheet } from '@react-pdf/re
 import { Curriculum } from '../components/Curriculum';
 
 
-
 const styles = StyleSheet.create({
     page: {
         flexDirection: 'row',
@@ -97,7 +96,7 @@ function Print({curriculum} : Curriculum) {
     return (
         <div className="w-full h-screen">
             <PDFViewer width="100%" height="100%">
-                <Document>
+                <Document title={ `Curriculum Vitae ${curriculum.name}`} >
                     <Page size="A4" style={styles.page}>
                         {/* Coluna Esquerda */}
                         <View style={styles.leftColumn}>
@@ -109,6 +108,9 @@ function Print({curriculum} : Curriculum) {
                             <Text style={styles.text}>{curriculum.email}</Text>
                             <Text style={styles.text}>{curriculum.phone}</Text>
                             <Text style={styles.text}>{curriculum.location}</Text>
+                            <Text style={styles.text}>Github: /{curriculum.nick}</Text>
+                            <Text style={styles.text}>LinkedIn: /{curriculum.nick}</Text>
+
 
                             <View style={styles.divider} />
                             <Text style={styles.sectionTitle}>Skills</Text>
@@ -184,3 +186,4 @@ function Print({curriculum} : Curriculum) {
 }
 
 export default Print;
+

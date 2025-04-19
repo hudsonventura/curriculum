@@ -1,5 +1,6 @@
 export type Curriculum = {
 	name: string;
+	nick: string;
 	hello_message: string;
 	role: string;
 	gravatar: string;

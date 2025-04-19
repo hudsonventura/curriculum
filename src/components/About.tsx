@@ -10,7 +10,7 @@ export const About = ({ curriculum }: Curriculum) => {
 			id="about"
 			className="container py-24 sm:py-32"
 		>
-			<div className="bg-muted/50 border rounded-lg py-12">
+			<div className="bg-muted/80 border rounded-lg py-12">
 				<div className="px-6 flex flex-col md:flex-row gap-8 md:gap-12">
 					<div className="md:w-1/2">
 						{

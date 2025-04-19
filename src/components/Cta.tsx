@@ -106,7 +106,7 @@ const timelineItems: TimelineItem[] = [
 export const Cta = ({curriculum} : Curriculum) => {
 	return (
 		<>
-			<section id="cta" className="bg-muted/50 py-16 my-24 sm:my-3">
+			<section id="cta" className="bg-muted/80 py-16 my-24 sm:my-3">
 				<div className="container mx-auto px-4 max-w-7xl lg:px-0 lg:flex lg:justify-center">
 					<div className="lg:w-full lg:flex lg:flex-col lg:justify-center">
 						<h2 className="text-3xl md:text-4xl font-bold mb-8">

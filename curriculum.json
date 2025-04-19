@@ -1,6 +1,7 @@
 {
     "name": "Hudson Ventura",
     "birth_date": "1989-04-09",
+    "nick": "hudsonventura",
     "hello_message": "Hi there 👋, I'm Hudson Ventura",
     "gravatar": "https://1.gravatar.com/userimage/240983322/ad274aec0e65870b1d4d23edc5c3b076?size=600",
     "role": "Desenvolvedor Full Stack",
