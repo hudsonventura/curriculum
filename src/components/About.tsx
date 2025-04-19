@@ -14,11 +14,12 @@ export const About = ({ curriculum }: Curriculum) => {
 				<div className="px-6 flex flex-col md:flex-row gap-8 md:gap-12">
 					<div className="md:w-1/2">
 						{
-							curriculum.skills.map(({ name, icon }) => (
+							curriculum.skills.map(({ name, icon, description }) => (
 								<img
 									src={icon}
-									alt=""
-									className="w-full object-contain rounded-lg max-h-[120px]"
+									alt={name}
+									className="w-full object-contain rounded-lg max-h-[90px]"
+									title={description}
 								/>
 							))
 						}

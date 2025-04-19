@@ -17,9 +17,11 @@ export const Hero = ({ curriculum }: Curriculum) => {
 						<span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
 							{curriculum.role2}
 						</span>{" "}
-
+						
 					</h2>
+					
 				</main>
+				<h1>{curriculum.hello_message}</h1>
 
 
 				{/* <div className="space-y-4 md:space-y-0 md:space-x-4">

@@ -34,20 +34,9 @@ export const Footer = ({ curriculum }: Curriculum) => {
 				</div>
 
 				<div className="flex flex-col gap-2">
-					<h3 className="font-bold text-lg">Platforms</h3>
-					<div>
-
-						Fone: {curriculum.phone}
-
-					</div>
-
-					<div>
-
-						Email: {curriculum.email}
-
-					</div>
-
-
+					<h3 className="font-bold text-lg">Contato</h3>
+					<div>WhatsApp: {curriculum.phone}</div>
+					<div>Email: {curriculum.email}</div>
 				</div>
 
 
@@ -60,6 +49,7 @@ export const Footer = ({ curriculum }: Curriculum) => {
 						Hudson Ventura
 					</a>
 				</h3>
+				<p className="text-sm text-muted-foreground mt-1">Credits to <a href="https://github.com/leoMirandaa" target="_blank" className="underline">Leo Miranda</a></p>
 			</section>
 		</footer>
 	);

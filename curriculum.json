@@ -1,45 +1,54 @@
 {
-    "name": "Woods Ventusss",
+    "name": "Hudson Ventura",
+    "birth_date": "1989-04-09",
+    "hello_message": "Hi there 👋, I'm Hudson Ventura",
     "gravatar": "https://1.gravatar.com/userimage/240983322/ad274aec0e65870b1d4d23edc5c3b076?size=600",
     "role": "Desenvolvedor Full Stack",
     "role2": "C# | React | PostgreSQL | GNU Linux",
     "skills": [
         {
             "name": "C# / Dotnet Core / ASP.NET Core",
-            "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png"
+            "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png",
+            "description": "Possuo domínio em C#, Dotnet Core e ASPNET Core, com experiência sólida no desenvolvimento de aplicações web e APIs robustas. Estou habituado a trabalhar com boas práticas, performance e escalabilidade."
         },
         {
             "name": "React",
-            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+            "description": "Tenho boa experiência com React, desenvolvendo interfaces modernas e funcionais. Ainda estou em constante aprendizado para aprimorar minhas habilidades na biblioteca."
         },
         {
             "name": "PostgreSQL",
-            "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
+            "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png",
+            "description": "Tenho conhecimento sólido em PostgreSQL, com experiência em modelagem de dados e consultas eficientes. Ainda busco aprofundar-me em aspectos avançados de performance e administração."
         },
         {
             "name": "GNU Linux",
-            "icon": "https://media.licdn.com/dms/image/C4E12AQELA0zJ-sxYxw/article-cover_image-shrink_600_2000/0/1575141578855?e=2147483647&v=beta&t=aRiIFIShe3jRnpnMkeDaEcepkWPXGwkDvjjOR7qyYNM"
+            "icon": "https://media.licdn.com/dms/image/C4E12AQELA0zJ-sxYxw/article-cover_image-shrink_600_2000/0/1575141578855?e=2147483647&v=beta&t=aRiIFIShe3jRnpnMkeDaEcepkWPXGwkDvjjOR7qyYNM",
+            "description": "Tenho boa experiência com GNU/Linux, especialmente com distribuições baseadas em Debian. Ainda estou explorando mais a fundo o ecossistema RHEL e seus derivados."
         },
         {
             "name": "Docker",
-            "icon": "https://logopng.com.br/logos/docker-27.png"
+            "icon": "https://logopng.com.br/logos/docker-27.png",
+            "description": "Possuo domínio em Docker, com experiência na criação de containers, definição de imagens personalizadas e orquestração de ambientes isolados."
         },
         {
             "name": "Git / GitHub",
-            "icon": "https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png"
+            "icon": "https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png",
+            "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
         },
         {
             "name": "Python",
-            "icon": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"
+            "icon": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
+            "description": "Tenho boa experiência com Python, aplicando a linguagem em automações e scripts diversos. Ainda estou em constante evolução para dominar recursos mais avançados da linguagem."
         }
     ],
     "location": "Cuiabá - MT - BRA",
-    "linkedin": "https://www.linkedin.com/in/woodsventusss/",
-    "github": "https://github.com/woodsventusss",
+    "linkedin": "https://www.linkedin.com/in/hudsonventura",
+    "github": "https://github.com/hudsonventura",
     "nuget": "https://www.nuget.org/profiles/hudsonventura",
     "pypi": "https://pypi.org/user/hudsonventura",
-    "phone": "(11) 99999-9999",
-    "email": "FZ0iR@example.com",
+    "phone": "+55 (65) 99232-7494",
+    "email": "hudsonventura@outlook.com",
     "companies": [
         {
             "name": "Amaggi Exp. e Imp. LTDA",
@@ -88,7 +97,7 @@
                     "role": "Estagiário em Eletrônica",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Apoia na montagem, testes e manutenção de circuitos e equipamentos eletrônicos, auxiliando técnicos e engenheiros em atividades práticas, registros e organização de componentes e ferramentas"
+                    "description": ""
                 }
             ]
         }

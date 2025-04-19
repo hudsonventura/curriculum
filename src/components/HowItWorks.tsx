@@ -56,7 +56,7 @@ export const HowItWorks = ({ curriculum, repos }) => {
 						</CardTitle>
 					</CardHeader> 
 					<CardContent>
-					Contribuo com a comunidade Python publicando pacotes no PyPI e incentivando o compartilhamento de soluções, em apoio a comunidade Python.
+					Contribuo com a comunidade Python publicando pacotes no PyPI e incentivando o compartilhamento de soluções, em apoio a comunidade Python. <s>Infelizmente o Pypi não tem uma API de contagem de downloads e pacotes 😬</s>
 					</CardContent>
 				</Card>
 			</div>

@@ -1,5 +1,6 @@
 export type Curriculum = {
 	name: string;
+	hello_message: string;
 	role: string;
 	gravatar: string;
 	role2: string;
@@ -38,4 +39,5 @@ export type Education = {
 export type Skills = {
 	name: string;
 	icon: string;
+	description: string;
 }
