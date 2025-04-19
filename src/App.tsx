@@ -27,6 +27,10 @@ function App() {
 
 	const curriculum: Curriculum = curriculumJSONFile;
 
+	useEffect(() => {
+		document.title = `${curriculum.name} - ${curriculum.role} ${curriculum.role2}`;
+	}, []);
+	
 
 
     const [repos, setRepos] = useState<Respositories>( {
