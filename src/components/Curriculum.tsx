@@ -29,6 +29,7 @@ export type Roles = {
 	start: Date;
 	end: Date;
 	description: string;
+	description_full: string;
 }
 
 export type Education = {
