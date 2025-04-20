@@ -116,6 +116,7 @@ function App() {
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content={curriculum.website} />
 				<meta property="og:image" content="/Preview.png" />
+				<link rel="icon" type="image/ico" href="./src/assets/favicon.ico" />
 			</Helmet>
 			<div className="App">
 				<Routes>
