@@ -17,14 +17,12 @@ export function ModeToggle() {
 		if(internalTheme === "light"){
 			setTheme("dark");
 			setInternalTheme("dark");
-			console.log("setou DARK")
+
 		}
 		if (internalTheme === "dark") {
 			setTheme("light");
 			setInternalTheme("light");
-			console.log("setou light")
 		}
-		console.log(internalTheme)
 	};
 
 	return (
