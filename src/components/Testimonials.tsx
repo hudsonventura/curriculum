@@ -61,7 +61,7 @@ const testimonials: TestimonialProps[] = [
 	},
 ];
 
-export const Testimonials = ({ repos }: Repositories) => {
+export const Testimonials = ({ repos, strings }: { repos: CurricuRepositorieslum, strings: StringsHandler }) => {
 
 
 	return (
@@ -70,16 +70,16 @@ export const Testimonials = ({ repos }: Repositories) => {
 			className="container py-24 sm:py-32"
 		>
 			<h2 className="text-3xl md:text-4xl font-bold">
-				Alguns dos meus
+				{strings[15]}
 				<span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
 					{" "}
-					repositórios públicos{" "}
+					{strings[16]}{" "}
 				</span>
-				no Github atualizados recentemente
+				{strings[17]}
 			</h2>
 
 			<p className="text-xl text-muted-foreground pt-4 pb-8">
-				Manter repositórios públicos no GitHub é uma forma de compartilhar conhecimento, promover transparência e incentivar a colaboração. Ao expor projetos abertamente, contribuo com a comunidade, permito que outras pessoas aprendam com meu código e também recebo feedbacks valiosos. Essa prática fortalece o ecossistema open source, acelera a inovação e demonstra comprometimento com boas práticas de desenvolvimento. Meus repositórios refletem meu aprendizado contínuo, minhas experimentações e meu desejo de construir soluções que possam ser úteis para outros desenvolvedores e profissionais de tecnologia.
+			{strings[18]}
 			</p>
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">

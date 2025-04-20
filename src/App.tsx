@@ -129,7 +129,7 @@ function App() {
 							<HowItWorks curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Features curriculum={curriculum} /> */}
 							
-							<Cta curriculum={curriculum} />
+							<Cta curriculum={curriculum} strings={strings} />
 							<Testimonials curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Team curriculum={curriculum} /> */}
 							{/* <Pricing curriculum={curriculum} /> */}

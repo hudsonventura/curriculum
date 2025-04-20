@@ -8,7 +8,7 @@ import { FaPython } from "react-icons/fa";
 
 
 
-export const HowItWorks = ({ curriculum, repos }) => {
+export const HowItWorks = ({ curriculum, strings, repos}: { curriculum: Curriculum, strings: StringsHandler, repos: any }) => {
 
 
 	return (
@@ -17,13 +17,13 @@ export const HowItWorks = ({ curriculum, repos }) => {
 			className="container text-center py-24 sm:py-32"
 		>
 			<h2 className="text-3xl md:text-4xl font-bold ">
-				Minhas{" "}
+				{strings[21]}{" "}
 				<span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-					contribuições{" "}
+					{strings[22]}{" "}
 				</span>
 			</h2>
 			<p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-				Contribuo ativamente com a comunidade de desenvolvedores por meio da publicação de bibliotecas no PyPI e no NuGet. Essas libs foram criadas para resolver desafios reais do dia a dia e são voltadas à reutilização, produtividade e boas práticas. Compartilhar soluções em forma de pacotes públicos me permite não apenas apoiar outros desenvolvedores, mas também aprender continuamente com o feedback da comunidade e evoluir minhas próprias habilidades.
+				{strings[23]}
 			</p>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -32,7 +32,7 @@ export const HowItWorks = ({ curriculum, repos }) => {
 					<CardHeader>
 						<CardTitle className="grid gap-4 place-items-center">
 							<FaGithub className="w-12 h-12" />
-							<a href={curriculum.github}>Repositórios Públicos no Github</a>
+							<a href={curriculum.github}>{strings[24]}</a>
 						</CardTitle>
 					</CardHeader>
 					<CardContent>Com <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.folower?.length || 0}</span> <i>followers</i> e mantendo <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.github?.length || 0}</span> repositórios públicos, contribuindo com a comunidade e fomentando o open source</CardContent>
