@@ -41,7 +41,7 @@ export const About = ({ curriculum, strings }: { curriculum: Curriculum, strings
 							}
 						</div>
 
-						<Statistics curriculum={curriculum} />
+						<Statistics curriculum={curriculum} strings={strings} />
 					</div>
 				</div>
 			</div>
