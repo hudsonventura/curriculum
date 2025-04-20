@@ -56,30 +56,30 @@
             "name": "Amaggi Exp. e Imp. LTDA",
             "roles": [
                 {
-                "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend.",
-                "description_full": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                    "role": "Full Stack Developer and BPM Process Analyst",
+                    "start": "2015-09-01",
+                    "end": "2999-06-30",
+                    "description": "Full stack development (Python, C#, React) and BPM process analysis with SoftExpert, automation, integrations, and continuous improvement.",
+                    "description_full": "Hybrid role combining full stack development using Python, C#, and React to build robust front-end and back-end solutions. Experience with APIs, databases, automations, and system integrations. Simultaneously responsible for process analysis and modeling using the SoftExpert platform, with a focus on operational efficiency, BPMN mapping, automated flow deployment, and continuous improvement."
                 },
                 {
-                    "role": "Ténico em Informática",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
-                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário.",
-                    "description_full": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
+                    "role": "IT Technician",
+                    "start": "2012-04-16",
+                    "end": "2015-08-30",
+                    "description": "Technical support, networks, formatting, legacy systems, and user and permission management in Active Directory.",
+                    "description_full": "Maintenance of computers, networks, legacy systems, and operating systems. Experience with level 1 technical support, user service, formatting, workstation and peripheral configuration, and account, permission, and group management in Active Directory."
                 }
             ]
         },
         {
-            "name": "Ericsson Gestão e Serviços",
+            "name": "Ericsson Gestão e Serviços, outsourced by Vivo",
             "roles": [
                 {
-                "role": "Técnico em Eletrônica",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend.",
-                "description_full": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                    "role": "Electronics Technician",
+                    "start": "2011-02-01",
+                    "end": "2011-09-07",
+                    "description": "Electrical maintenance on Vivo towers, inspection, UPS systems, generators, cabling, and height safety.",
+                    "description_full": "Specialized in corrective and preventive electrical maintenance on telecom towers for Vivo. Involves inspection and repair of electrical panels, UPS systems, generators, grounding, and cabling. Experienced with height safety standards, electrical schematics, and continuous support of mobile and data signal operations."
                 }
             ]
         },
@@ -87,23 +87,23 @@
             "name": "TVCA - Televisão Centro América",
             "roles": [
                 {
-                "role": "Técnico em Eletrônica e Informática",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo.",
-                "description_full": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo."
+                    "role": "Electronics and IT Technician",
+                    "start": "2010-05-01",
+                    "end": "2010-11-22",
+                    "description": "Technical lead in TV: electronics maintenance, networks, servers, automation, broadcasting, AV equipment, and computers.",
+                    "description_full": "Technical lead for installation and maintenance of electronic equipment, networks, and operating systems at a TV station. Worked with broadcasting infrastructure, cabling, server maintenance, automation systems support, and operation of audiovisual equipment."
                 },
                 {
-                    "role": "Auxiliar Técnico",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
-                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros.",
-                    "description_full": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
+                    "role": "Technical Assistant",
+                    "start": "2009-01-02",
+                    "end": "2010-05-30",
+                    "description": "Installation and support for audio, video, and IT equipment, with supervised field technical support.",
+                    "description_full": "Assisted in the installation, maintenance, and support of audio, video, and IT equipment, providing technical field support under the supervision of technicians and engineers."
                 },
                 {
-                    "role": "Estagiário em Eletrônica",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
+                    "role": "Electronics Intern",
+                    "start": "2007-01-02",
+                    "end": "2009-01-02",
                     "description": "",
                     "description_full": ""
                 }
@@ -113,38 +113,37 @@
     "education_level": "Postgraduate",
     "educations": [
         {
-            "school": "UFV - Universidade Federal de Viçosa",
-            "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
-            "start": "2022-01-01",
-            "end": "2022-06-30",
+            "school": "UFV - Federal University of Viçosa",
+            "degree": "Postgraduate Lato Sensu in Artificial Intelligence",
+            "start": "2023-03-08",
+            "end": "2024-04-29",
             "description": "Description of Education B",
-            "description_full": "Description of Education B"
+            "description_full": "Specialization focused on developing intelligent solutions with an emphasis on machine learning, deep learning, natural language processing, computer vision, and predictive analysis. The program covers languages like Python, the use of frameworks like TensorFlow and PyTorch, along with practical applications in automation and data science, exclusively using Python."
         },
         {
-            "school": "UFMT - Universidade Federal de Mato Grosso",
-            "degree": "Pós Graduação Lato Sensu em Banco de Dados",
-            "start": "2022-01-01",
-            "end": "2022-06-30",
+            "school": "Faculdade Futura - Institute of Science, Education, and Technology of Votuporanga",
+            "degree": "Postgraduate Lato Sensu in IT Management",
+            "start": "2019-11-30",
+            "end": "2021-01-05",
+            "description": "Description of Education A",
+            "description_full": "Education focused on leadership and strategic management of Information Technology, with an emphasis on governance, project management, and team management."
+        },
+        {
+            "school": "UFMT - Federal University of Mato Grosso",
+            "degree": "Postgraduate Lato Sensu in Database Management",
+            "start": "2018-04-06",
+            "end": "2019-11-30",
             "description": "Description of Education B",
-            "description_full": "Description of Education B"
+            "description_full": "Specialized training in modeling, administration, and optimization of relational and non-relational databases. Covers technologies like Oracle, PostgreSQL, MongoDB, as well as topics like security, BI, performance tuning, and corporate data management."
         },
         {
-            "school": "UFMT - Universidade Federal de Mato Grosso",
-            "degree": "Graduação em Sistemas de Informação",
-            "start": "2018-01-01",
-            "end": "2018-06-30",
+            "school": "UFMT - Federal University of Mato Grosso",
+            "degree": "Bachelor's Degree in Information Systems",
+            "start": "2012-01-02",
+            "end": "2018-03-23",
             "description": "Description of Education A",
-            "description_full": "Description of Education A"
-        },
-        {
-            "school": "IFMT - Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (CEFET)",
-            "degree": "Técnico em Eletrônica",
-            "start": "2008-01-01",
-            "end": "2008-06-30",
-            "description": "Description of Education A",
-            "description_full": "Description of Education A"
+            "description_full": "Solid education in software development, programming logic, data structures, and system architecture. Also includes advanced knowledge in computer networks, information security, communication protocols, and management of computational environments."
         }
-        
     ],
     "about": [
         "Full Stack Developer using C#/ASP.Net Core and React",
