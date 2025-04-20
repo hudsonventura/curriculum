@@ -4,7 +4,7 @@ import { HeroCards } from "./HeroCards";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Curriculum } from "./Curriculum";
 
-export const Hero = ({ curriculum }: Curriculum) => {
+export const Hero = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 	return (
 		<section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-9 gap-10">
 			<div className="text-center lg:text-start space-y-6">
@@ -44,7 +44,7 @@ export const Hero = ({ curriculum }: Curriculum) => {
 
 			{/* Hero cards sections */}
 			<div className="z-10">
-				<HeroCards curriculum={curriculum} />
+				<HeroCards curriculum={curriculum} strings={strings} />
 			</div>
 
 			{/* Shadow effect */}

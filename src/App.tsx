@@ -23,6 +23,7 @@ import stringsPT from './locales/PT/strings.json';
 
 import curriculumJSONFileEN from './locales/EN/curriculum.json';
 import stringsEN from './locales/EN/strings.json';
+import StringsHandler from "./components/StringsHandler";
 
 import { Curriculum } from './components/Curriculum';
 import { useEffect, useState } from "react";
@@ -42,9 +43,9 @@ function App() {
 
 	const language = navigator.language || navigator.userLanguage;
 	const curriculum: Curriculum = language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN;
-	const strings = language === 'pt-BR' ? stringsPT : stringsEN;
+	const strings = new StringsHandler(language === 'pt-BR' ? stringsPT : stringsEN);
 
-   
+	
 
 
 
@@ -110,25 +111,25 @@ function App() {
 					<Route path="/" element={
 						<>
 							<Navbar curriculum={curriculum} strings={strings} />
-							<Hero curriculum={curriculum} />
+							<Hero curriculum={curriculum} strings={strings} />
 							{/* <Sponsors curriculum={curriculum} /> */}
-							<About curriculum={curriculum} />
-							<HowItWorks curriculum={curriculum} repos={repos} />
+							<About curriculum={curriculum} strings={strings} />
+							<HowItWorks curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Features curriculum={curriculum} /> */}
 							
 							<Cta curriculum={curriculum} />
-							<Testimonials curriculum={curriculum} repos={repos} />
+							<Testimonials curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Team curriculum={curriculum} /> */}
 							{/* <Pricing curriculum={curriculum} /> */}
 							{/* <Newsletter curriculum={curriculum} /> */}
 							{/* <FAQ curriculum={curriculum} /> */}
 							{/* <Services curriculum={curriculum} /> */}
-							<Footer curriculum={curriculum} />
-							<ScrollToTop curriculum={curriculum} /> 
+							<Footer curriculum={curriculum} strings={strings} />
+							<ScrollToTop curriculum={curriculum} strings={strings} /> 
 							<ConstellationBackground />
 						</>
 					} />
-					<Route path="/Print" element={<Print curriculum={curriculum} />} /> {/* Página de logs */}
+					<Route path="/Print" element={<Print curriculum={curriculum} strings={strings} />} /> {/* Página de logs */}
 				</Routes>
 			</div>
 		</Router>

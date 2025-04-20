@@ -1,9 +1,9 @@
-{
-    "strings": {
-        "0": "About Me",
-        "1": "Contributions",
-        "2": "Experiences and Education",
-        "3": "Repositories",
-        "4": "Contacts"
-    }
+{        
+    "0": "About Me",
+    "1": "Contributions",
+    "2": "Experiences and Education",
+    "3": "Repositories",
+    "4": "Contacts",
+    "5": "Print",
+    "6": "Technology enthusiast, Linux and open source"
 }

@@ -83,46 +83,35 @@ export const Testimonials = ({ repos }: Repositories) => {
 			</p>
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
-				{repos.github
-					.sort((a, b) =>
-						new Date(b.pushed_at).getTime() -
-						new Date(a.pushed_at).getTime()
-					)
-					.slice(0, 9)
-					.map(
-					(repo, index) => (
-						<Card
-							key={repo.id}
-							className="max-w-md md:break-inside-avoid overflow-hidden"
-						>
-							<CardHeader className="flex flex-row items-center gap-4 pb-2">
-								{/* <Avatar>
-									<AvatarImage
-										alt=""
-										src=""
-									/>
-									<AvatarFallback>OM</AvatarFallback>
-								</Avatar> */}
+				{Array.isArray(repos.github) &&
+					repos.github
+						.sort((a, b) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
+						.slice(0, 9)
+						.map((repo) => (
+							<Card key={repo.id} className="max-w-md md:break-inside-avoid overflow-hidden">
+								<CardHeader className="flex flex-row items-center gap-4 pb-2">
+									<div className="flex flex-col">
+										<CardTitle className="text-lg">
+											<a target="_blank" href={repo.svn_url} className="">
+												{repo.name}
+											</a>
+										</CardTitle>
+										<CardDescription>
+											{repo.language} |{" "}
+											{new Intl.DateTimeFormat("en-US", {
+												year: "numeric",
+												month: "2-digit",
+												day: "2-digit",
+												hour: "2-digit",
+												minute: "2-digit",
+											}).format(new Date(repo.pushed_at))}
+										</CardDescription>
+									</div>
+								</CardHeader>
 
-								<div className="flex flex-col">
-									<CardTitle className="text-lg"><a target="_blank" href={repo.svn_url} className="">{repo.name}</a></CardTitle>
-									<CardDescription>
-										{repo.language} |{" "}
-										{new Intl.DateTimeFormat("en-US", {
-											year: "numeric",
-											month: "2-digit",
-											day: "2-digit",
-											hour: "2-digit",
-											minute: "2-digit",
-										}).format(new Date(repo.pushed_at))}
-									</CardDescription>
-								</div>
-							</CardHeader>
-
-							<CardContent>{repo.description}</CardContent>
-						</Card>
-					)
-				)}
+								<CardContent>{repo.description}</CardContent>
+							</Card>
+						))}
 			</div>
 		</section>
 	);

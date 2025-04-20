@@ -27,7 +27,7 @@ import { IoPersonCircle } from "react-icons/io5";
 
 
 
-export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, strings: any }) => {
+export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	return (
@@ -76,7 +76,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings.strings[0]}
+									{strings[0]}
 								</a>
 
 								<a
@@ -86,7 +86,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings.strings[1]}
+									{strings[1]}
 								</a>
 
 								<a
@@ -96,7 +96,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings.strings[2]}
+									{strings[2]}
 								</a>
 
 								<a
@@ -106,7 +106,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings.strings[3]}
+									{strings[3]}
 								</a>
 
 								<a
@@ -116,7 +116,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings.strings[4]}
+									{strings[4]}
 								</a>
 
 									<a
@@ -145,7 +145,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings.strings[0]}
+								{strings[0]}
 							</a>
 
 							<a
@@ -155,7 +155,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings.strings[1]}
+								{strings[1]}
 							</a>
 
 							<a
@@ -165,7 +165,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings.strings[2]}
+								{strings[2]}
 							</a>
 
 							<a
@@ -175,7 +175,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings.strings[3]}
+								{strings[3]}
 							</a>
 
 							<a
@@ -185,7 +185,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings.strings[4]}
+								{strings[4]}
 							</a>
 
 						
@@ -199,7 +199,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 							className={`border ${buttonVariants({ variant: "secondary" })}`}
 						>
 							<RiPrinterLine className="mr-2 w-5 h-5" />
-							Imprimir
+							{strings[5]}
 						</a>
 
 						<ModeToggle />

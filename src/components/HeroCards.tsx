@@ -21,7 +21,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 
 
-export const HeroCards = ({ curriculum }: Curriculum) => {
+export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 	return (
 		<div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
 			{/* Testimonial */}
@@ -60,7 +60,7 @@ export const HeroCards = ({ curriculum }: Curriculum) => {
 
 				<CardContent className="text-center pb-2">
 					<p>
-						Entusiasta de tecnologia, Linux e open source
+					{strings[6]}
 					</p>
 				</CardContent>
 
