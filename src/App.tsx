@@ -30,15 +30,13 @@ import { useEffect, useState } from "react";
 import { Respositories } from "./components/Repositories";
 
 import ConstellationBackground from './components/ConstellationBackground';
+import { Helmet } from 'react-helmet';
+import { Preview } from "./components/Preview";
 
 
 function App() {
 
-	
 
-	useEffect(() => {
-		document.title = `${curriculum.name} - ${curriculum.role} ${curriculum.role2}`;
-	}, []);
 	
 
 	const language = navigator.language || navigator.userLanguage;
@@ -105,7 +103,20 @@ function App() {
 	}, []);
 
 	return (
+		
 		<Router>
+			<Helmet>
+				<title>{`${curriculum.name} - ${curriculum.role} ${curriculum.role2}`}</title>
+				<meta name="description" content={`$${curriculum.role} ${curriculum.role2}`} />
+				<meta name="author" content={curriculum.name} />
+				<meta name="keywords" content={`${curriculum.name}, ${curriculum.nick}, ${curriculum.skills.map(skill => skill.name).join(", ")}, SoftExpert, SESuite`} />
+
+				<meta property="og:title" content={`${curriculum.name} - ${curriculum.role} ${curriculum.role2}`} />
+				<meta property="og:description" content={`${curriculum.role} ${curriculum.role2}`} />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={curriculum.website} />
+				<meta property="og:image" content="/Preview.png" />
+			</Helmet>
 			<div className="App">
 				<Routes>
 					<Route path="/" element={
@@ -129,7 +140,8 @@ function App() {
 							<ConstellationBackground />
 						</>
 					} />
-					<Route path="/Print" element={<Print curriculum={curriculum} strings={strings} />} /> {/* Página de logs */}
+					<Route path="/Print" element={<Print curriculum={curriculum} strings={strings} />} /> 
+					<Route path="/Preview" element={<Preview />} />
 				</Routes>
 			</div>
 		</Router>
