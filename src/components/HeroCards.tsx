@@ -108,7 +108,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 
 						<a
 							rel="noreferrer noopener"
-							href={`https://api.whatsapp.com/send?phone=${curriculum.name}&text=Hi there, I would like to talk to you!`} 
+							href={`https://api.whatsapp.com/send?phone=${curriculum.phone}&text=Hi there, I would like to talk to you!`} 
 							target="_blank"
 							className={buttonVariants({
 								variant: "ghost",
