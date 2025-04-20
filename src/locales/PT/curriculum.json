@@ -1,0 +1,145 @@
+{
+    "name": "Hudson Ventura",
+    "birth_date": "1989-04-09",
+    "nick": "hudsonventura",
+    "hello_message": "Hi there 👋, I'm Hudson Ventura",
+    "gravatar": "https://1.gravatar.com/userimage/240983322/ad274aec0e65870b1d4d23edc5c3b076?size=600",
+    "role": "Desenvolvedor Full Stack",
+    "role2": "C# | React | PostgreSQL | GNU Linux",
+    "skills": [
+        {
+            "name": "C# / Dotnet Core / ASP.NET Core",
+            "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png",
+            "description": "Possuo domínio em C#, Dotnet Core e ASPNET Core, com experiência sólida no desenvolvimento de aplicações web e APIs robustas. Estou habituado a trabalhar com boas práticas, performance e escalabilidade."
+        },
+        {
+            "name": "React",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+            "description": "Tenho boa experiência com React, desenvolvendo interfaces modernas e funcionais. Ainda estou em constante aprendizado para aprimorar minhas habilidades na biblioteca."
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png",
+            "description": "Tenho conhecimento sólido em PostgreSQL, com experiência em modelagem de dados e consultas eficientes. Ainda busco aprofundar-me em aspectos avançados de performance e administração."
+        },
+        {
+            "name": "GNU Linux",
+            "icon": "https://media.licdn.com/dms/image/C4E12AQELA0zJ-sxYxw/article-cover_image-shrink_600_2000/0/1575141578855?e=2147483647&v=beta&t=aRiIFIShe3jRnpnMkeDaEcepkWPXGwkDvjjOR7qyYNM",
+            "description": "Tenho boa experiência com GNU/Linux, especialmente com distribuições baseadas em Debian. Ainda estou explorando mais a fundo o ecossistema RHEL e seus derivados."
+        },
+        {
+            "name": "Docker",
+            "icon": "https://logopng.com.br/logos/docker-27.png",
+            "description": "Possuo domínio em Docker, com experiência na criação de containers, definição de imagens personalizadas e orquestração de ambientes isolados."
+        },
+        {
+            "name": "Git / GitHub",
+            "icon": "https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png",
+            "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
+        },
+        {
+            "name": "Python",
+            "icon": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
+            "description": "Tenho boa experiência com Python, aplicando a linguagem em automações e scripts diversos. Ainda estou em constante evolução para dominar recursos mais avançados da linguagem."
+        }
+    ],
+    "location": "Cuiabá - MT - BRA",
+    "linkedin": "https://www.linkedin.com/in/hudsonventura",
+    "github": "https://github.com/hudsonventura",
+    "nuget": "https://www.nuget.org/profiles/hudsonventura",
+    "pypi": "https://pypi.org/user/hudsonventura",
+    "phone": "+55 (65) 99232-7494",
+    "email": "hudsonventura@outlook.com",
+    "companies": [
+        {
+            "name": "Amaggi Exp. e Imp. LTDA",
+            "roles": [
+                {
+                "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend."
+                },
+                {
+                    "role": "Ténico em Informática",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
+                }
+            ]
+        },
+        {
+            "name": "Ericsson Gestão e Serviços",
+            "roles": [
+                {
+                "role": "Técnico em Eletrônica",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend quanto no backend."
+                }
+            ]
+        },
+        {
+            "name": "TVCA - Televisão Centro América",
+            "roles": [
+                {
+                "role": "Técnico em Eletrônica e Informática",
+                "start": "2022-01-01",
+                "end": "2022-06-30",
+                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo o funcionamento e a integração entre tecnologias."
+                },
+                {
+                    "role": "Auxiliar Técnico",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
+                },
+                {
+                    "role": "Estagiário em Eletrônica",
+                    "start": "2022-01-01",
+                    "end": "2022-06-30",
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    "education_level": "Pós Graduado",
+    "educations": [
+        {
+            "school": "UFV - Universidade Federal de Viçosa",
+            "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
+            "start": "2022-01-01",
+            "end": "2022-06-30",
+            "description": "Description of Education B"
+        },
+        {
+            "school": "UFMT - Universidade Federal de Mato Grosso",
+            "degree": "Pós Graduação Lato Sensu em Banco de Dados",
+            "start": "2022-01-01",
+            "end": "2022-06-30",
+            "description": "Description of Education B"
+        },
+        {
+            "school": "UFMT - Universidade Federal de Mato Grosso",
+            "degree": "Graduação em Sistemas de Informação",
+            "start": "2018-01-01",
+            "end": "2018-06-30",
+            "description": "Description of Education A"
+        },
+        {
+            "school": "IFMT - Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (CEFET)",
+            "degree": "Técnico em Eletrônica",
+            "start": "2008-01-01",
+            "end": "2008-06-30",
+            "description": "Description of Education A"
+        }
+        
+    ],
+    "about": [
+        "Desenvolvedor Full Stack usando C#/ASP.Net Core e React", 
+        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# e .NET Core, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, versionamento com Git, consumo de APIs, integração contínua e testes automatizados. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
+        "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, incluindo: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis.",
+        "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas."
+    ]
+
+}

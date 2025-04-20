@@ -18,7 +18,12 @@ import "./App.css";
 import Print from "./components/Print";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import curriculumJSONFile from '../curriculum.json';
+import curriculumJSONFile from './locales/PT/curriculum.json';
+import stringsPT from './locales/PT/strings.json';
+
+import curriculumJSONFileEN from './locales/EN/curriculum.json';
+import stringsEN from './locales/EN/strings.json';
+
 import { Curriculum } from './components/Curriculum';
 import { useEffect, useState } from "react";
 import { Respositories } from "./components/Repositories";
@@ -28,12 +33,19 @@ import ConstellationBackground from './components/ConstellationBackground';
 
 function App() {
 
-	const curriculum: Curriculum = curriculumJSONFile;
+	
 
 	useEffect(() => {
 		document.title = `${curriculum.name} - ${curriculum.role} ${curriculum.role2}`;
 	}, []);
 	
+
+	const language = navigator.language || navigator.userLanguage;
+	const curriculum: Curriculum = language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN;
+	const strings = language === 'pt-BR' ? stringsPT : stringsEN;
+
+   
+
 
 
     const [repos, setRepos] = useState<Respositories>( {
@@ -97,7 +109,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={
 						<>
-							<Navbar curriculum={curriculum} />
+							<Navbar curriculum={curriculum} strings={strings} />
 							<Hero curriculum={curriculum} />
 							{/* <Sponsors curriculum={curriculum} /> */}
 							<About curriculum={curriculum} />
