@@ -35,6 +35,7 @@ const ConstellationBackground = () => {
       radius: number;
 
       constructor() {
+        if (!canvas) return;
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.vx = config.velocity - Math.random() * 0.5;
@@ -43,6 +44,10 @@ const ConstellationBackground = () => {
       }
 
       create() {
+        if (!canvas) return;
+        const context = canvas.getContext('2d');
+        if (!context) return;
+
         context.beginPath();
         context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         context.fill();

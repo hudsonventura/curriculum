@@ -1,14 +1,14 @@
 "use client"
 import { cn } from "@/lib/utils"
-import { Company } from "./Curriculum"
+import { Company, Roles } from "./Curriculum"
 
 
 
 
-export function TimelineCompany({ items, className }: Company) {
+export function TimelineCompany({ items }: Company) {
 	return (
-		<div className={cn("space-y-8", className)}>
-			{items.map((item, index) => (
+		<div className={cn("space-y-8")}>
+			{items.map((item: Company, index: number) => (
 				<div key={index} className="relative pl-8 pb-4">
 					{index !== items.length - 1 && <div className="absolute left-3 top-6 bottom-0 w-px bg-border" />}
 					<div className="absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary bg-background flex items-center justify-center">
@@ -22,7 +22,7 @@ export function TimelineCompany({ items, className }: Company) {
 						{/* Render subitems if they exist */}
 						{item.roles && item.roles.length > 0 && (
 							<div className="mt-4 space-y-3 pl-4 border-l border-dashed border-border">
-								{item.roles.map((role, index) => (
+								{item.roles.map((role: Roles, index: number) => (
 									<div key={index} className="relative pl-4">
 										<div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-muted-foreground" />
 										<div>

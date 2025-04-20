@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
 import { FaGithub } from "react-icons/fa6";
 import { SiNuget } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
+import { Curriculum } from "./Curriculum";
+import StringsHandler from "./StringsHandler";
 
 
 

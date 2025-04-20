@@ -1,7 +1,7 @@
 import { Curriculum } from "./Curriculum";
-import { Timeline, TimelineCompany } from "./TimelineCompany";
+import StringsHandler from "./StringsHandler";
+import { TimelineCompany } from "./TimelineCompany";
 import { TimelineEducational } from "./TimelineEducational";
-import { Button } from "./ui/button";
 
 
 

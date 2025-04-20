@@ -1,5 +1,4 @@
 import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
 import { Curriculum } from "./Curriculum";
 import StringsHandler from "./StringsHandler";
 
@@ -35,7 +34,7 @@ export const About = ({ curriculum, strings }: { curriculum: Curriculum, strings
 								{strings[8]}
 							</h2>
 							{
-								curriculum.about.map((txt, index) => {
+								curriculum.about.map((txt: string, index: number) => {
 									return <p className="text-xl text-muted-foreground mt-4" key={index}>{txt}</p>;
 								})
 							}

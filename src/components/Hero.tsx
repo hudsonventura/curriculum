@@ -1,8 +1,7 @@
-import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
+
 import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Curriculum } from "./Curriculum";
+import StringsHandler from "./StringsHandler";
 
 export const Hero = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 	return (

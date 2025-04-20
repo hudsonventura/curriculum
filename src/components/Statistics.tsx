@@ -1,3 +1,6 @@
+import { Curriculum } from "./Curriculum";
+import StringsHandler from "./StringsHandler";
+
 export const Statistics = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 
 

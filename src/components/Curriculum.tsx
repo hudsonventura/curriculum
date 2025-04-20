@@ -17,6 +17,8 @@ export type Curriculum = {
 	educations: Education[];
 	education_level: string;
 	birth_date: Date;
+	location: string;
+	about: string[];
 }
 
 export type Company = {
@@ -37,6 +39,8 @@ export type Education = {
 	degree: string;
 	start: Date;
 	end: Date;
+	description: string;
+	description_full: string;
 }
 
 export type Skills = {

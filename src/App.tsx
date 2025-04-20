@@ -126,14 +126,14 @@ function App() {
 							{/* <Features curriculum={curriculum} /> */}
 							
 							<Cta curriculum={curriculum} strings={strings} />
-							<Testimonials curriculum={curriculum} repos={repos} strings={strings} />
+							<Testimonials repos={repos} strings={strings} />
 							{/* <Team curriculum={curriculum} /> */}
 							{/* <Pricing curriculum={curriculum} /> */}
 							{/* <Newsletter curriculum={curriculum} /> */}
 							{/* <FAQ curriculum={curriculum} /> */}
 							{/* <Services curriculum={curriculum} /> */}
 							<Footer curriculum={curriculum} strings={strings} />
-							<ScrollToTop curriculum={curriculum} strings={strings} /> 
+							<ScrollToTop /> 
 							<ConstellationBackground />
 						</>
 					} />

@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { Curriculum } from "./Curriculum";
-import { LogoIcon } from "./Icons";
 import { SiGmail } from "react-icons/si";
+import StringsHandler from "./StringsHandler";
 
 export const Footer = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 	return (

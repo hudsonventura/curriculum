@@ -1,5 +1,5 @@
 import { PDFViewer, Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-import { Curriculum } from '../components/Curriculum';
+import { Company, Curriculum, Roles } from '../components/Curriculum';
 import StringsHandler from './StringsHandler';
 
 
@@ -141,14 +141,14 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
 
                                 {/* EMPRESA 1 */}
                                 {
-                                    curriculum.companies.map((company, index) => (
-                                        <View style={styles.timelineItem}>
+                                    curriculum.companies.map((company: Company, index: number) => (
+                                        <View key={index} style={styles.timelineItem}>
                                             <View style={styles.timelineDot} />
                                             <Text style={styles.companyName}>{company.name}</Text>
 
                                             {
-                                                company.roles.map((role, index) => (
-                                                    <View style={styles.roleContainer}>
+                                                company.roles.map((role: Roles, index: number) => (
+                                                    <View key={index} style={styles.roleContainer}>
                                                         <Text style={styles.roleTitle}>{role.role}</Text>
                                                         <Text style={styles.rolePeriod}>
                                                             {new Date(role.start).getFullYear()} - {new Date(role.end).getFullYear()}

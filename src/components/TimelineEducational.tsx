@@ -4,10 +4,10 @@ import { Education } from "./Curriculum"
 
 
 
-export function TimelineEducational({ items}: Education) {
+export function TimelineEducational({ items }: Education) {
 	return (
 		<div className={cn("space-y-8")}>
-			{items.map((item, index) => (
+			{items.map((item: Education, index: number) => (
 				<div key={index} className="relative pl-8 pb-4">
 					{index !== items.length - 1 && <div className="absolute left-3 top-6 bottom-0 w-px bg-border" />}
 					<div className="absolute left-0 top-1 w-6 h-6 rounded-full border-2 border-primary bg-background flex items-center justify-center">
