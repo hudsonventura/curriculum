@@ -56,27 +56,30 @@
             "name": "Amaggi Exp. e Imp. LTDA",
             "roles": [
                 {
-                "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                    "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
+                    "start": "2015-09-01",
+                    "end": "2999-06-30",
+                    "description": "Desenvolvimento full stack (Python, C#, React) e análise de processos BPM com SoftExpert, automações, integrações e melhoria contínua.",
+                    "description_full": "Atuação híbrida unindo desenvolvimento full stack com Python, C# e React, criando soluções robustas para front-end e back-end. Experiência com APIs, banco de dados, automações e integrações de sistemas. Simultaneamente, análise e modelagem de processos utilizando a plataforma SoftExpert, com foco em eficiência operacional, mapeamento BPMN, implantação de fluxos automatizados e melhoria contínua."
                 },
                 {
                     "role": "Ténico em Informática",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
-                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
+                    "start": "2012-04-16",
+                    "end": "2015-08-30",
+                    "description": "Suporte técnico, redes, formatação, sistemas legados e gerenciamento de usuários e permissões no Active Directory.",
+                    "description_full": "Manutenção de computadores, redes, sistemas legados e sistemas operacionais. Experiência com suporte técnico de nível 1, atendimento a usuários, formatação, configuração de estações e periféricos, além de gerenciamento de contas, permissões e grupos no Active Directory."
                 }
             ]
         },
         {
-            "name": "Ericsson Gestão e Serviços",
+            "name": "Ericsson Gestão e Serviços, terceirizado Vivo",
             "roles": [
                 {
-                "role": "Técnico em Eletrônica",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                    "role": "Técnico em Eletrônica",
+                    "start": "2011-02-01",
+                    "end": "2011-09-07",
+                    "description": "Manutenção elétrica em torres da Vivo, inspeção, nobreaks, geradores, cabeamento e segurança em altura.",
+                    "description_full": "Atuação especializada na manutenção corretiva e preventiva de sistemas elétricos em torres de telecomunicação para a operadora Vivo. Envolve inspeção e reparo de painéis elétricos, nobreaks, geradores, aterramento e cabeamento. Experiência com padrões de segurança em altura, leitura de diagramas elétricos e suporte à operação contínua de sinal móvel e dados."
                 }
             ]
         },
@@ -84,22 +87,25 @@
             "name": "TVCA - Televisão Centro América",
             "roles": [
                 {
-                "role": "Técnico em Eletrônica e Informática",
-                "start": "2022-01-01",
-                "end": "2022-06-30",
-                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo o funcionamento."
+                    "role": "Técnico em Eletrônica e Informática",
+                    "start": "2010-05-01",
+                    "end": "2010-11-22",
+                    "description": "Responsável técnico em TV: manutenção eletrônica, redes, servidores, automação, transmissão e equipamentos audiovisuais e computadores.",
+                    "description_full": "Responsável ténico pelas instalações e manutenção de equipamentos eletrônicos, redes, sistemas operacionais de emissora de TV, atuando com infraestrutura de transmissão, cabeamento, manutenção de servidores, suporte a sistemas de automação e operação de equipamentos audiovisuais."
                 },
                 {
                     "role": "Auxiliar Técnico",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
-                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
+                    "start": "2009-01-02",
+                    "end": "2010-05-30",
+                    "description": "Instalação e suporte de áudio, vídeo e informática, com apoio técnico em campo supervisionado.",
+                    "description_full": "Auxiliei na instalação, manutenção e suporte de equipamentos de áudio, vídeo e informática, prestando apoio técnico em campo sob supervisão de técnicos e engenheiros."
                 },
                 {
                     "role": "Estagiário em Eletrônica",
-                    "start": "2022-01-01",
-                    "end": "2022-06-30",
-                    "description": ""
+                    "start": "2007-01-02",
+                    "end": "2009-01-02",
+                    "description": "",
+                    "description_full": ""
                 }
             ]
         }
@@ -109,38 +115,43 @@
         {
             "school": "UFV - Universidade Federal de Viçosa",
             "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
-            "start": "2022-01-01",
-            "end": "2022-06-30",
-            "description": "Description of Education B"
+            "start": "2023-03-08",
+            "end": "2024-04-29",
+            "description": "Description of Education B",
+            "description_full": "Especialização voltada ao desenvolvimento de soluções inteligentes com foco em machine learning, deep learning, processamento de linguagem natural, visão computacional e análise preditiva. A formação abrange linguagens como Python, uso de frameworks como TensorFlow e PyTorch, além de aplicações práticas em automação e ciência de dados, exclusivamente com Python."
+        },
+        {
+            "school": "Faculdade Futura - Instituto de Ciência, Educação e Tecnologia de Votuporanga",
+            "degree": "Pós Graduação Lato Sensu em Gestão de TI",
+            "start": "2019-11-30",
+            "end": "2021-01-05",
+            "description": "Description of Education A",
+            "description_full": "Formação voltada para liderança e gestão estratégica da Tecnologia da Informação, com foco em governança, gestão de projetos e gestão de equipes."
         },
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
             "degree": "Pós Graduação Lato Sensu em Banco de Dados",
-            "start": "2022-01-01",
-            "end": "2022-06-30",
-            "description": "Description of Education B"
+            "start": "2018-04-06",
+            "end": "2019-11-30",
+            "description": "Description of Education B",
+            "description_full": "Capacitação especializada em modelagem, administração e otimização de bancos de dados relacionais e não-relacionais. Abrange tecnologias como Oracle e PostgreSQL, MongoDB, além de temas como segurança, BI, tuning de performance e gestão de dados corporativos."
         },
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
             "degree": "Graduação em Sistemas de Informação",
-            "start": "2018-01-01",
-            "end": "2018-06-30",
-            "description": "Description of Education A"
-        },
-        {
-            "school": "IFMT - Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (CEFET)",
-            "degree": "Técnico em Eletrônica",
-            "start": "2008-01-01",
-            "end": "2008-06-30",
-            "description": "Description of Education A"
+            "start": "2012-01-02",
+            "end": "2018-03-23",
+            "description": "Description of Education A",
+            "description_full": "Formação sólida em desenvolvimento de software, lógica de programação, estruturas de dados e arquitetura de sistemas. Inclui também conhecimentos avançados em redes de computadores, segurança da informação, protocolos de comunicação e administração de ambientes computacionais."
         }
+        
         
     ],
     "about": [
         "Desenvolvedor Full Stack usando C#/ASP.Net Core e React", 
-        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# e .NET Core, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, versionamento com Git, consumo de APIs, integração contínua e testes automatizados. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
-        "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, incluindo: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis.",
-        "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas."
+        "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas.",
+        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# / ASPNET Core e Python, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, Pipeline do Github, versionamento com Git, consumo de APIs, integração contínua e testes unitários e de integração. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
+        "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, onde me sinto mais confortável para trabalhar, que são: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis."
     ]
 
 }

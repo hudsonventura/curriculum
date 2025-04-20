@@ -59,13 +59,15 @@
                 "role": "Desenvolvedor Full Stack e Analista de Processos BPM",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend.",
+                "description_full": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
                 },
                 {
                     "role": "Ténico em Informática",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
+                    "description": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário.",
+                    "description_full": "Profissional com formação técnica em informática e conhecimento prático em montagem e manutenção de computadores, redes, sistemas operacionais (Windows e Linux) e suporte técnico ao usuário."
                 }
             ]
         },
@@ -76,7 +78,8 @@
                 "role": "Técnico em Eletrônica",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
+                "description": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend.",
+                "description_full": "Profissional com experiência no desenvolvimento de aplicações completas, atuando tanto no frontend."
                 }
             ]
         },
@@ -87,19 +90,22 @@
                 "role": "Técnico em Eletrônica e Informática",
                 "start": "2022-01-01",
                 "end": "2022-06-30",
-                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo."
+                "description": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo.",
+                "description_full": "Instala, configura, mantém e repara sistemas eletrônicos e de informática, incluindo hardware, redes, softwares e equipamentos eletrônicos, garantindo."
                 },
                 {
                     "role": "Auxiliar Técnico",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
+                    "description": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros.",
+                    "description_full": "Auxilia na instalação, manutenção e suporte de equipamentos, sistemas e redes, prestando apoio técnico em campo ou laboratório, sob supervisão de técnicos ou engenheiros."
                 },
                 {
                     "role": "Estagiário em Eletrônica",
                     "start": "2022-01-01",
                     "end": "2022-06-30",
-                    "description": ""
+                    "description": "",
+                    "description_full": ""
                 }
             ]
         }
@@ -111,28 +117,32 @@
             "degree": "Pós Graduação Lato Sensu em Inteligência Artificial",
             "start": "2022-01-01",
             "end": "2022-06-30",
-            "description": "Description of Education B"
+            "description": "Description of Education B",
+            "description_full": "Description of Education B"
         },
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
             "degree": "Pós Graduação Lato Sensu em Banco de Dados",
             "start": "2022-01-01",
             "end": "2022-06-30",
-            "description": "Description of Education B"
+            "description": "Description of Education B",
+            "description_full": "Description of Education B"
         },
         {
             "school": "UFMT - Universidade Federal de Mato Grosso",
             "degree": "Graduação em Sistemas de Informação",
             "start": "2018-01-01",
             "end": "2018-06-30",
-            "description": "Description of Education A"
+            "description": "Description of Education A",
+            "description_full": "Description of Education A"
         },
         {
             "school": "IFMT - Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (CEFET)",
             "degree": "Técnico em Eletrônica",
             "start": "2008-01-01",
             "end": "2008-06-30",
-            "description": "Description of Education A"
+            "description": "Description of Education A",
+            "description_full": "Description of Education A"
         }
         
     ],
@@ -142,5 +152,4 @@
         "Technology enthusiast, Linux and open source. I have experience with a wide range of tools and platforms, including: Ubuntu, CentOS, Docker (Swarm and Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualization with Hyper-V, Proxmox, VirtualBox, VMWare, and Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL, and Redis.",
         "In search of challenging projects. Focused on results through the improvement and automation of processes and systems. I am always eager to study new things. Given the constant changes in the computing field, I can't always delve deeply into certain subjects, but I try to at least grasp the concepts to understand which technologies can solve my problems."
     ]
-
 }

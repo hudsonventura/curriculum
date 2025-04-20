@@ -151,7 +151,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                                                     <View style={styles.roleContainer}>
                                                         <Text style={styles.roleTitle}>{role.role}</Text>
                                                         <Text style={styles.rolePeriod}>
-                                                            {new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(role.start))}
+                                                            {new Date(role.start).getFullYear()} - {new Date(role.end).getFullYear()}
                                                         </Text>
                                                         <Text style={styles.text}>
                                                             {role.description}
@@ -175,7 +175,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                                         <View style={styles.roleContainer}>
                                             <Text style={styles.roleTitle}>{education.degree}</Text>
                                             <Text style={styles.rolePeriod}>
-                                            Formatura: {new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date(education.start))}
+                                                {new Date(education.start).getFullYear()} - {new Date(education.end).getFullYear()}
                                             </Text>
                                             <Text style={styles.text}>
                                                 {education.school}

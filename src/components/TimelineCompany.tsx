@@ -2,26 +2,8 @@
 import { cn } from "@/lib/utils"
 import { Company } from "./Curriculum"
 
-export interface TimelineItem {
-	id: string | number
-	heading: string
-	subtitle?: string // Texto secundário para o título
-	date: string
-	content: string
-	subitems?: SubItem[]
-}
 
-export interface SubItem {
-	id: string | number
-	heading: string
-	content: string
-	date: string
-}
 
-interface TimelineProps {
-	items: TimelineItem[]
-	className?: string
-}
 
 export function TimelineCompany({ items, className }: Company) {
 	return (
@@ -45,8 +27,8 @@ export function TimelineCompany({ items, className }: Company) {
 										<div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-muted-foreground" />
 										<div>
 											<h4 className="font-semibold text-base">{role.role}</h4>
-											<p className="text-xs text-muted-foreground mb-1">{role.start}</p>
-											<div className="text-sm text-muted-foreground">{role.description}</div>
+											<p className="text-xs text-muted-foreground mb-1">{new Date(role.start).getFullYear()} - {new Date(role.end).getFullYear()}</p>
+											<div className="text-sm">{role.description_full}</div>
 										</div>
 									</div>
 								))}

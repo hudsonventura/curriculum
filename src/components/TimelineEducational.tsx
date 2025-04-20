@@ -2,26 +2,7 @@
 import { cn } from "@/lib/utils"
 import { Education } from "./Curriculum"
 
-export interface TimelineItem {
-	id: string | number
-	heading: string
-	subtitle?: string // Texto secundário para o título
-	date: string
-	content: string
-	subitems?: SubItem[]
-}
 
-export interface SubItem {
-	id: string | number
-	heading: string
-	content: string
-	date: string
-}
-
-interface TimelineProps {
-	items: TimelineItem[]
-	className?: string
-}
 
 export function TimelineEducational({ items}: Education) {
 	return (
@@ -37,8 +18,8 @@ export function TimelineEducational({ items}: Education) {
 							<h3 className="font-bold text-xl">{item.degree}</h3>
 							<p className="text-muted-foreground">{item.school}</p>
 						</div>
-						<p className="text-sm text-muted-foreground">Formatura em {new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(item.end))}</p>
-						<div className="text-sm leading-relaxed">{item.description}</div>
+						<p className="text-sm text-muted-foreground">{new Date(item.start).getFullYear()} - {new Date(item.end).getFullYear()}</p>
+						<div className="text-sm leading-relaxed">{item.description_full}</div>
 					</div>
 				</div>
 			))}
