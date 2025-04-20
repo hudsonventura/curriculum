@@ -1,8 +1,9 @@
 import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
 import { Curriculum } from "./Curriculum";
+import StringsHandler from "./StringsHandler";
 
-export const About = ({ curriculum }: Curriculum) => {
+export const About = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {
 
 
 	return (
@@ -29,9 +30,9 @@ export const About = ({ curriculum }: Curriculum) => {
 						<div className="pb-6">
 							<h2 className="text-3xl md:text-4xl font-bold">
 								<span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-									Sobre{" "}
+									{strings[7]}{" "}
 								</span>
-								Mim
+								{strings[8]}
 							</h2>
 							{
 								curriculum.about.map((txt, index) => {

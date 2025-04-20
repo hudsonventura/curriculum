@@ -44,6 +44,7 @@
         }
     ],
     "location": "Cuiabá - MT - BRA",
+    "website": "https://hudsonventura.ddnsgeek.com",
     "linkedin": "https://www.linkedin.com/in/hudsonventura",
     "github": "https://github.com/hudsonventura",
     "nuget": "https://www.nuget.org/profiles/hudsonventura",
@@ -136,10 +137,10 @@
         
     ],
     "about": [
-        "Desenvolvedor Full Stack usando C#/ASP.Net Core e React", 
-        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# e .NET Core, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, versionamento com Git, consumo de APIs, integração contínua e testes automatizados. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
-        "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, incluindo: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis.",
-        "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas."
+        "Full Stack Developer using C#/ASP.Net Core and React",
+        "Engaged in the development of modern, scalable, and high-performance web applications. On the backend, I build robust RESTful APIs with C# and .NET Core, integrating databases, authentication, and business logic. On the frontend, I use React to create interactive, responsive interfaces with a focus on user experience. I am familiar with DevOps practices, version control with Git, API consumption, continuous integration, and automated testing. Committed to clean code practices, design patterns, and agile methodologies.",
+        "Technology enthusiast, Linux and open source. I have experience with a wide range of tools and platforms, including: Ubuntu, CentOS, Docker (Swarm and Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualization with Hyper-V, Proxmox, VirtualBox, VMWare, and Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL, and Redis.",
+        "In search of challenging projects. Focused on results through the improvement and automation of processes and systems. I am always eager to study new things. Given the constant changes in the computing field, I can't always delve deeply into certain subjects, but I try to at least grasp the concepts to understand which technologies can solve my problems."
     ]
 
 }

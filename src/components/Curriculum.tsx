@@ -9,6 +9,7 @@ export type Curriculum = {
 	phone: string;
 	skills: Skills[];
 	linkedin: string;
+	website: string;
 	github: string;
 	nuget: string;
 	pypi: string;
