@@ -1,5 +1,6 @@
 import { PDFViewer, Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 import { Curriculum } from '../components/Curriculum';
+import StringsHandler from './StringsHandler';
 
 
 const styles = StyleSheet.create({
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
     },
 });
 
-function Print({curriculum} : Curriculum) {
+function Print({curriculum, strings} : {curriculum: Curriculum, strings: StringsHandler}) {
 
 
 
@@ -104,10 +105,9 @@ function Print({curriculum} : Curriculum) {
                             <Text style={styles.text}>{curriculum.role}</Text>
                             <Text style={styles.text}>{curriculum.role2}</Text>
                             <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>Contato</Text>
+                            <Text style={styles.sectionTitle}>{strings[31]}</Text>
                             <Text style={styles.text}>{curriculum.email}</Text>
                             <Text style={styles.text}>{curriculum.phone}</Text>
-                            <Text style={styles.text}>{curriculum.location}</Text>
                             <Text style={styles.text}>Github: /{curriculum.nick}</Text>
                             <Text style={styles.text}>LinkedIn: /{curriculum.nick}</Text>
 
@@ -119,11 +119,24 @@ function Print({curriculum} : Curriculum) {
                                     <Text key={index} style={styles.text}>{name}</Text>
                                 ))
                             }
+
+                            <View style={styles.divider} />
+                            <Text style={styles.sectionTitle}>{strings[35]}</Text>
+                            <Text style={styles.text}>• {new Date().getFullYear() - new Date(curriculum.birth_date).getFullYear()} {strings[10]}</Text>
+                            <Text style={styles.text}>• {curriculum.location}</Text>
+                            <Text style={styles.text}>• {curriculum.education_level}</Text>
+
+                            <View style={{ position: 'absolute', bottom: 10, width: '100%', alignItems: 'left' }}>
+                                <Text style={{ fontSize: 8, color: '#888' }}>
+                                    {strings[34]} {new Intl.DateTimeFormat(navigator.language === 'pt-BR' ? 'pt-BR' : 'en-US', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date())}
+                                </Text>
+                            </View>
+                            
                         </View>
 
                         {/* Coluna Direita */}
                         <View style={styles.rightColumn}>
-                            <Text style={styles.sectionTitle}>Experiência Profissional</Text>
+                            <Text style={styles.sectionTitle}>{strings[32]}</Text>
                             <View style={styles.timelineContainer}>
 
                                 {/* EMPRESA 1 */}
@@ -155,7 +168,7 @@ function Print({curriculum} : Curriculum) {
                             </View>
 
                             <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>Educação</Text>
+                            <Text style={styles.sectionTitle}>{strings[33]}</Text>
                             {
                                 curriculum.educations.map((education, index) => (
                                     <View style={styles.roleContainer}>
@@ -173,10 +186,7 @@ function Print({curriculum} : Curriculum) {
                                 ))
                             }
 
-                            <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>Certificações</Text>
-                            <Text style={styles.text}>• Certificado React Avançado - Alura</Text>
-                            <Text style={styles.text}>• Docker Essentials - Udemy</Text>
+                            
                         </View>
                     </Page>
                 </Document>

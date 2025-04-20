@@ -10,6 +10,15 @@ import { FaPython } from "react-icons/fa";
 
 export const HowItWorks = ({ curriculum, strings, repos}: { curriculum: Curriculum, strings: StringsHandler, repos: any }) => {
 
+	const templateNuget = strings[27];
+	const phraseNuget = templateNuget.replace("{TOTALDOWNLOADS}", repos?.nugetLibs?.data?.[0]?.totalDownloads || 0)
+									 .replace("{NUMPACKAGES}", repos?.nugetProfile?.data?.length || 0);
+
+	const templateGithub = strings[28];
+	const phraseGithub = templateGithub.replace("{TOTALFOLOWERS}", repos?.folower?.length || 0)
+									.replace("{NUMREPOSITORIES}", repos?.github?.length || 0);
+
+
 
 	return (
 		<section
@@ -35,28 +44,31 @@ export const HowItWorks = ({ curriculum, strings, repos}: { curriculum: Curricul
 							<a href={curriculum.github}>{strings[24]}</a>
 						</CardTitle>
 					</CardHeader>
-					<CardContent>Com <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.folower?.length || 0}</span> <i>followers</i> e mantendo <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.github?.length || 0}</span> repositórios públicos, contribuindo com a comunidade e fomentando o open source</CardContent>
+					<CardContent>{phraseGithub}</CardContent>
 				</Card>
 				<Card className="bg-muted/80"> 
 					<CardHeader>
 						<CardTitle className="grid gap-4 place-items-center">
 							<SiNuget className="w-12 h-12 text-[#0078d7]" />
-							<a href={curriculum.nuget} target="_blank">Pacotes Nuget | C#</a>
+							<a href={curriculum.nuget} target="_blank">{strings[29]}</a>
 						</CardTitle>
 					</CardHeader>
 					<CardContent>
-						Num total de <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.nugetLibs?.data?.[0]?.totalDownloads || 0}</span> downloads distribuídos entre meus <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">{repos?.nugetProfile?.data?.length || 0}</span> pacotes no NuGet, promovendo reutilização de código e contribuindo com a comunidade .NET.
+						{
+							phraseNuget
+						}
+						
 					</CardContent>
 				</Card>
 				<Card className="bg-muted/80"> 
 					<CardHeader>
 						<CardTitle className="grid gap-4 place-items-center">
 							<img src="https://www.python.org/static/favicon.ico" className="w-12 h-12" alt="Python Logo" />
-							<a href={curriculum.pypi} target="_blank">Pacotes Pypi | Python</a>
+							<a href={curriculum.pypi} target="_blank">{strings[30]}</a>
 						</CardTitle>
 					</CardHeader> 
 					<CardContent>
-					Contribuo com a comunidade Python publicando pacotes no PyPI e incentivando o compartilhamento de soluções, em apoio a comunidade Python. <s>Infelizmente o Pypi não tem uma API de contagem de downloads e pacotes 😬</s>
+						{strings[25]} <s>{strings[26]}</s>
 					</CardContent>
 				</Card>
 			</div>

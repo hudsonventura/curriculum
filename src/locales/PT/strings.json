@@ -23,5 +23,21 @@
     "21": "Minhas",
     "22": "contribuições",
     "23": "Contribuo ativamente com a comunidade de desenvolvedores por meio da publicação de bibliotecas no PyPI e no NuGet. Essas libs foram criadas para resolver desafios reais do dia a dia e são voltadas à reutilização, produtividade e boas práticas. Compartilhar soluções em forma de pacotes públicos me permite não apenas apoiar outros desenvolvedores, mas também aprender continuamente com o feedback da comunidade e evoluir minhas próprias habilidades",
-    "24": "Repositórios Públicos no Github"
+    "24": "Repositórios Públicos no Github",
+    "25": "Contribuo com a comunidade Python publicando pacotes no PyPI e incentivando o compartilhamento de soluções, em apoio a comunidade Python.",
+    "26": "Infelizmente o Pypi não tem uma API de contagem de downloads e pacotes 😬",
+    "27": "Num total de {TOTALDOWNLOADS} downloads distribuídos entre meus {NUMPACKAGES} pacotes no NuGet, promovendo reutilização de código e contribuindo com a comunidade .NET.",
+    "28": "Com {TOTALFOLOWERS} followers e mantendo {NUMREPOSITORIES} repositórios públicos, contribuindo com a comunidade e fomentando o open source",
+    "29": "Pacotes Nuget | C#",
+    "30": "Pacotes Pypi | Python",
+    "31": "Contato",
+    "32": "Experiência Profissional",
+    "33": "Educação",
+    "34": "Impresso em:",
+    "35": "Informações",
+
+
+
+
+    "end": "nothing"
 }
