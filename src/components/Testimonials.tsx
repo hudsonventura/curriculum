@@ -1,4 +1,4 @@
-import Repositories, { Respositories } from "./Repositories";
+import Repositories from "./Repositories";
 import StringsHandler from "./StringsHandler";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import {
