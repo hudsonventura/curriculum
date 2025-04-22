@@ -5,7 +5,12 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"
-    volumes:
-      - ./frontend:/app
+      - "5173:4173"
 
+#    networks:
+#      - servicos_rede-nginx
+
+
+#networks:
+#  servicos_rede-nginx:
+#    external: true
