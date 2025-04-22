@@ -23,11 +23,11 @@ import StringsHandler from "./components/StringsHandler";
 
 import { Curriculum } from './components/Curriculum';
 import { useEffect, useState } from "react";
-import { Respositories } from "./components/Repositories";
 
 import ConstellationBackground from './components/ConstellationBackground';
 import { Helmet } from 'react-helmet';
 import { Preview } from "./components/Preview";
+import Respositories from "./components/Repositories";
 
 
 function App() {
@@ -36,7 +36,23 @@ function App() {
 	
 
 	const language = navigator.language || navigator.language;
-	const curriculum: Curriculum = language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN;
+	const curriculum: Curriculum = {
+		...language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN,
+		companies: (language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN).companies.map(company => ({
+			...company,
+			roles: company.roles.map(role => ({
+				...role,
+				start: new Date(role.start),
+				end: new Date(role.end)
+			}))
+		})),
+		educations: (language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN).educations.map(education => ({
+			...education,
+			start: new Date(education.start),
+			end: new Date(education.end)
+		})),
+		birth_date: new Date((language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN).birth_date)
+	};
 	const strings = new StringsHandler(language === 'pt-BR' ? stringsPT : stringsEN);
 
 	
@@ -56,7 +72,7 @@ function App() {
 			try {
 				const response = await fetch("https://api.github.com/users/hudsonventura/repos");
 				const data = await response.json();
-				setRepos(prev => ({ ...prev, github: data }));
+				setRepos((prev: Respositories) => ({ ...prev, github: data }));
 			} catch (error) {
 				console.error("Error fetching repos:", error);
 			}
@@ -66,7 +82,7 @@ function App() {
 			try {
 				const response = await fetch("https://api.github.com/users/hudsonventura/followers");
 				const data = await response.json();
-				setRepos(prev => ({ ...prev, folower: data }));
+				setRepos((prev: Respositories) => ({ ...prev, folower: data }));
 			} catch (error) {
 				console.error("Error fetching followers:", error);
 			}
@@ -76,7 +92,7 @@ function App() {
 			try {
 				const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
 				const data = await response.json();
-				setRepos(prev => ({ ...prev, nugetLibs: data }));
+				setRepos((prev: Respositories) => ({ ...prev, nugetLibs: data }));
 			} catch (error) {
 				console.error("Error fetching NuGet libs:", error);
 			}
@@ -86,7 +102,7 @@ function App() {
 			try {
 				const response = await fetch("https://api-v2v3search-0.nuget.org/query?q=owner:hudsonventura");
 				const data = await response.json();
-				setRepos(prev => ({ ...prev, nugetProfile: data }));
+				setRepos((prev: Respositories) => ({ ...prev, nugetProfile: data }));
 			} catch (error) {
 				console.error("Error fetching NuGet profile:", error);
 			}

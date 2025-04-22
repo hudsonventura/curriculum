@@ -4,7 +4,7 @@ import { Education } from "./Curriculum"
 
 
 
-export function TimelineEducational({ items }: Education) {
+export function TimelineEducational({ items }: { items: Education[] }) {
 	return (
 		<div className={cn("space-y-8")}>
 			{items.map((item: Education, index: number) => (

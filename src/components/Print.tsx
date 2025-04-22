@@ -88,6 +88,12 @@ const styles = StyleSheet.create({
         margin: 0,
         marginBottom: 0
     },
+    roleDescription: {
+        position: 'absolute', 
+        bottom: 10, 
+        width: '100%', 
+        //alignItems: 'left'
+    },
 });
 
 function Print({curriculum, strings} : {curriculum: Curriculum, strings: StringsHandler}) {
@@ -105,7 +111,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                             <Text style={styles.text}>{curriculum.role}</Text>
                             <Text style={styles.text}>{curriculum.role2}</Text>
                             <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>{strings[31]}</Text>
+                            <Text style={styles.sectionTitle}>{(strings as any)[31]}</Text>
                             <Text style={styles.text}>{curriculum.email}</Text>
                             <Text style={styles.text}>{curriculum.phone}</Text>
                             <Text style={styles.text}>Github: /{curriculum.nick}</Text>
@@ -115,20 +121,20 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                             <View style={styles.divider} />
                             <Text style={styles.sectionTitle}>Skills</Text>
                             {
-                                curriculum.skills.map(({name, icon}, index) => (
+                                curriculum.skills.map(({name}, index) => (
                                     <Text key={index} style={styles.text}>{name}</Text>
                                 ))
                             }
 
                             <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>{strings[35]}</Text>
-                            <Text style={styles.text}>• {new Date().getFullYear() - new Date(curriculum.birth_date).getFullYear()} {strings[10]}</Text>
+                            <Text style={styles.sectionTitle}>{(strings as any)[35]}</Text>
+                            <Text style={styles.text}>• {new Date().getFullYear() - new Date(curriculum.birth_date).getFullYear()} {(strings as any)[10]}</Text>
                             <Text style={styles.text}>• {curriculum.location}</Text>
                             <Text style={styles.text}>• {curriculum.education_level}</Text>
 
-                            <View style={{ position: 'absolute', bottom: 10, width: '100%', alignItems: 'left' }}>
+                            <View style={styles.roleDescription}>
                                 <Text style={{ fontSize: 8, color: '#888' }}>
-                                    {strings[34]} {new Intl.DateTimeFormat(navigator.language === 'pt-BR' ? 'pt-BR' : 'en-US', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date())}
+                                    {(strings as any)[34]} {new Intl.DateTimeFormat(navigator.language === 'pt-BR' ? 'pt-BR' : 'en-US', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date())}
                                 </Text>
                             </View>
                             
@@ -136,7 +142,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
 
                         {/* Coluna Direita */}
                         <View style={styles.rightColumn}>
-                            <Text style={styles.sectionTitle}>{strings[32]}</Text>
+                            <Text style={styles.sectionTitle}>{(strings as any)[32]}</Text>
                             <View style={styles.timelineContainer}>
 
                                 {/* EMPRESA 1 */}
@@ -168,10 +174,10 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                             </View>
 
                             <View style={styles.divider} />
-                            <Text style={styles.sectionTitle}>{strings[33]}</Text>
+                            <Text style={styles.sectionTitle}>{(strings as any)[33]}</Text>
                             {
                                 curriculum.educations.map((education, index) => (
-                                    <View style={styles.roleContainer}>
+                                    <View key={index} style={styles.roleContainer}>
                                         <View style={styles.roleContainer}>
                                             <Text style={styles.roleTitle}>{education.degree}</Text>
                                             <Text style={styles.rolePeriod}>

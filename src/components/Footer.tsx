@@ -12,13 +12,13 @@ export const Footer = ({ curriculum, strings }: { curriculum: Curriculum, string
 
 
 				<div className="flex flex-col gap-2">
-					<h3 className="font-bold text-lg">{strings[13]}</h3>
+					<h3 className="font-bold text-lg">{(strings as any)[13]}</h3>
 					<div className="flex items-center"><a target="_blank" href={curriculum.github} ><FaGithub className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.github}</span></div>
 					<div className="flex items-center"><a target="_blank" href={curriculum.linkedin}><FaLinkedin className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.linkedin}</span></div>
 				</div>
 
 				<div className="flex flex-col gap-2">
-					<h3 className="font-bold text-lg">{strings[14]}</h3>
+					<h3 className="font-bold text-lg">{(strings as any)[14]}</h3>
 					<div className="flex items-center"><a target="_blank" href={`https://api.whatsapp.com/send?phone=${curriculum.phone}&text=Hi there, I would like to talk to you!`} ><FaWhatsapp className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.phone}</span></div>
 					<div className="flex items-center"><a target="_blank" href={`mailto:${curriculum.email}`}><SiGmail className="inline-block w-5 h-5 mr-2" /></a><span className="truncate">{curriculum.email}</span></div>
 				</div>

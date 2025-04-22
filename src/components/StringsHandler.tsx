@@ -24,7 +24,5 @@ export default class StringsHandler {
       }
     }) as StringsHandler;
   }
-  
-  [key: string]: string;
 }
 

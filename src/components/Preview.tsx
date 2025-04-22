@@ -1,4 +1,3 @@
-import { Statistics } from "./Statistics";
 import preview from "../assets/preview.png";
 
 

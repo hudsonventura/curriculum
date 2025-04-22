@@ -16,11 +16,11 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
 import { Curriculum } from "./Curriculum";
 import { RiPrinterLine } from "react-icons/ri";
 
 import { IoPersonCircle } from "react-icons/io5";
+import StringsHandler from "./StringsHandler";
 
 
 
@@ -76,7 +76,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings[0]}
+									{(strings as any)[0]}
 								</a>
 
 								<a
@@ -86,7 +86,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings[1]}
+									{(strings as any)[1]}
 								</a>
 
 								<a
@@ -96,7 +96,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings[2]}
+									{(strings as any)[2]}
 								</a>
 
 								<a
@@ -106,7 +106,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings[3]}
+									{(strings as any)[3]}
 								</a>
 
 								<a
@@ -116,7 +116,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 										variant: "ghost",
 									})}`}
 								>
-									{strings[4]}
+									{(strings as any)[4]}
 								</a>
 
 									<a
@@ -145,7 +145,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings[0]}
+								{(strings as any)[0]}
 							</a>
 
 							<a
@@ -155,7 +155,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings[1]}
+								{(strings as any)[1]}
 							</a>
 
 							<a
@@ -165,7 +165,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings[2]}
+								{(strings as any)[2]}
 							</a>
 
 							<a
@@ -175,7 +175,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings[3]}
+								{(strings as any)[3]}
 							</a>
 
 							<a
@@ -185,7 +185,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 									variant: "ghost",
 								})}`}
 							>
-								{strings[4]}
+								{(strings as any)[4]}
 							</a>
 
 						
@@ -199,7 +199,7 @@ export const Navbar = ({ curriculum, strings }: { curriculum: Curriculum, string
 							className={`border ${buttonVariants({ variant: "secondary" })}`}
 						>
 							<RiPrinterLine className="mr-2 w-5 h-5" />
-							{strings[5]}
+							{(strings as any)[5]}
 						</a>
 
 						<ModeToggle />

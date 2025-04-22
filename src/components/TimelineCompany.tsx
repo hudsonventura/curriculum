@@ -5,7 +5,7 @@ import { Company, Roles } from "./Curriculum"
 
 
 
-export function TimelineCompany({ items }: Company) {
+export function TimelineCompany({ items }: { items: Company[] }) {
 	return (
 		<div className={cn("space-y-8")}>
 			{items.map((item: Company, index: number) => (

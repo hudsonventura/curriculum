@@ -58,7 +58,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 
 				<CardContent className="text-center pb-2">
 					<p>
-					{strings[6]}
+					{(strings as any)[6]}
 					</p>
 				</CardContent>
 

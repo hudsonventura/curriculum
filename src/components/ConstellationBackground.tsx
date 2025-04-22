@@ -28,11 +28,12 @@ const ConstellationBackground = () => {
     };
 
     class Star {
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      radius: number;
+      x: number = 0;
+      y: number = 0;
+      vx: number = 0;
+      vy: number = 0;
+      radius: number = 0;
+
 
       constructor() {
         if (!canvas) return;
@@ -54,6 +55,7 @@ const ConstellationBackground = () => {
       }
 
       animate() {
+        if (!canvas) return;
         if (this.y < 0 || this.y > canvas.height) this.vy = -this.vy;
         if (this.x < 0 || this.x > canvas.width) this.vx = -this.vx;
         this.x += this.vx;

@@ -29,9 +29,9 @@ export const About = ({ curriculum, strings }: { curriculum: Curriculum, strings
 						<div className="pb-6">
 							<h2 className="text-3xl md:text-4xl font-bold">
 								<span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-									{strings[7]}{" "}
+									{(strings as any)[7]}{" "}
 								</span>
-								{strings[8]}
+								{(strings as any)[8]}
 							</h2>
 							{
 								curriculum.about.map((txt: string, index: number) => {
