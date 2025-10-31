@@ -33,8 +33,13 @@
             "description": "Possuo domínio em Docker, com experiência na criação de containers, definição de imagens personalizadas e orquestração de ambientes isolados."
         },
         {
-            "name": "Git / GitHub",
-            "icon": "https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png",
+            "name": "Git",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png",
+            "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
+        },
+        {
+            "name": "GitHub",
+            "icon": "https://logolook.net/wp-content/uploads/2022/12/GitHub-Logo.png",
             "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
         },
         {
@@ -58,7 +63,7 @@
                 {
                     "role": "Full Stack Developer and BPM Process Analyst",
                     "start": "2015-09-01",
-                    "end": "2999-06-30",
+                    "end": null,
                     "description": "Full stack development (Python, C#, React) and BPM process analysis with SoftExpert, automation, integrations, and continuous improvement.",
                     "description_full": "Hybrid role combining full stack development using Python, C#, and React to build robust front-end and back-end solutions. Experience with APIs, databases, automations, and system integrations. Simultaneously responsible for process analysis and modeling using the SoftExpert platform, with a focus on operational efficiency, BPMN mapping, automated flow deployment, and continuous improvement."
                 },
@@ -84,17 +89,17 @@
             ]
         },
         {
-            "name": "TVCA - Televisão Centro América",
+            "name": "TVCA - Centro América Television",
             "roles": [
                 {
-                    "role": "Electronics and IT Technician",
+                    "role": "IT Technician",
                     "start": "2010-05-01",
                     "end": "2010-11-22",
                     "description": "Technical lead in TV: electronics maintenance, networks, servers, automation, broadcasting, AV equipment, and computers.",
                     "description_full": "Technical lead for installation and maintenance of electronic equipment, networks, and operating systems at a TV station. Worked with broadcasting infrastructure, cabling, server maintenance, automation systems support, and operation of audiovisual equipment."
                 },
                 {
-                    "role": "Technical Assistant",
+                    "role": "IT Technical Assistant",
                     "start": "2009-01-02",
                     "end": "2010-05-30",
                     "description": "Installation and support for audio, video, and IT equipment, with supervised field technical support.",

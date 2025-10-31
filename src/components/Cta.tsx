@@ -20,11 +20,11 @@ export const Cta = ({ curriculum, strings }: { curriculum: Curriculum, strings: 
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 							<div>
-								<h1 className="text-3xl font-bold mb-8">Expêriencias profissionais</h1>
+								<h1 className="text-3xl font-bold mb-8">{(strings as any)[32]}{" "}</h1>
 								<TimelineCompany items={curriculum.companies} />
 							</div>
 							<div>
-							<h1 className="text-3xl font-bold mb-8">Educação</h1>
+							<h1 className="text-3xl font-bold mb-8">{(strings as any)[33]}{" "}</h1>
 								<TimelineEducational items={curriculum.educations} />
 							</div>
 						</div>

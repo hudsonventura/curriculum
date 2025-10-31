@@ -27,7 +27,9 @@ export function TimelineCompany({ items }: { items: Company[] }) {
 										<div className="absolute left-0 top-1.5 w-2 h-2 rounded-full bg-muted-foreground" />
 										<div>
 											<h4 className="font-semibold text-base">{role.role}</h4>
-											<p className="text-xs text-muted-foreground mb-1">{new Date(role.start).getFullYear()} - {new Date(role.end).getFullYear()}</p>
+											<p className="text-sm text-muted-foreground">
+												{new Date(role.start).getFullYear()} - {typeof role.end === 'string' ? role.end : new Date(role.end).getFullYear()}
+											</p>
 											<div className="text-sm">{role.description_full}</div>
 										</div>
 									</div>

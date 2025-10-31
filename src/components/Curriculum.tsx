@@ -29,7 +29,7 @@ export type Company = {
 export type Roles = {
 	role: string;
 	start: Date;
-	end: Date;
+	end: Date | string;
 	description: string;
 	description_full: string;
 }
@@ -38,7 +38,7 @@ export type Education = {
 	school: string;
 	degree: string;
 	start: Date;
-	end: Date;
+	end: Date | string;
 	description: string;
 	description_full: string;
 }

@@ -157,7 +157,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                                                     <View key={index} style={styles.roleContainer}>
                                                         <Text style={styles.roleTitle}>{role.role}</Text>
                                                         <Text style={styles.rolePeriod}>
-                                                            {new Date(role.start).getFullYear()} - {new Date(role.end).getFullYear()}
+                                                            {new Date(role.start).getFullYear()} - {typeof role.end === 'string' ? role.end : new Date(role.end).getFullYear()}
                                                         </Text>
                                                         <Text style={styles.text}>
                                                             {role.description}
@@ -181,7 +181,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                                         <View style={styles.roleContainer}>
                                             <Text style={styles.roleTitle}>{education.degree}</Text>
                                             <Text style={styles.rolePeriod}>
-                                                {new Date(education.start).getFullYear()} - {new Date(education.end).getFullYear()}
+                                                {new Date(education.start).getFullYear()} - {typeof education.end === 'string' ? education.end : new Date(education.end).getFullYear()}
                                             </Text>
                                             <Text style={styles.text}>
                                                 {education.school}

@@ -43,13 +43,13 @@ function App() {
 			roles: company.roles.map(role => ({
 				...role,
 				start: new Date(role.start),
-				end: new Date(role.end)
+				end: role.end ? new Date(role.end) : (language === 'pt-BR' ? 'até o momento' : 'present')
 			}))
 		})),
 		educations: (language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN).educations.map(education => ({
 			...education,
 			start: new Date(education.start),
-			end: new Date(education.end)
+			end: education.end ? new Date(education.end) : (language === 'pt-BR' ? 'até o momento' : 'present')
 		})),
 		birth_date: new Date((language === 'pt-BR' ? curriculumJSONFile : curriculumJSONFileEN).birth_date)
 	};

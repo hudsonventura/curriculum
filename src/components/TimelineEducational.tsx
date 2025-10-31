@@ -18,7 +18,9 @@ export function TimelineEducational({ items }: { items: Education[] }) {
 							<h3 className="font-bold text-xl">{item.degree}</h3>
 							<p className="text-muted-foreground">{item.school}</p>
 						</div>
-						<p className="text-sm text-muted-foreground">{new Date(item.start).getFullYear()} - {new Date(item.end).getFullYear()}</p>
+						<p className="text-sm text-muted-foreground">
+							{new Date(item.start).getFullYear()} - {typeof item.end === 'string' ? item.end : new Date(item.end).getFullYear()}
+						</p>
 						<div className="text-sm leading-relaxed">{item.description_full}</div>
 					</div>
 				</div>
