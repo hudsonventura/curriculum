@@ -18,6 +18,7 @@ export type Curriculum = {
 	education_level: string;
 	birth_date: Date;
 	location: string;
+	english_level: string;
 	about: string[];
 }
 

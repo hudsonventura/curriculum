@@ -10,45 +10,46 @@
         {
             "name": "C# / Dotnet Core / ASP.NET Core",
             "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png",
-            "description": "Possuo domínio em C#, Dotnet Core e ASPNET Core, com experiência sólida no desenvolvimento de aplicações web e APIs robustas. Estou habituado a trabalhar com boas práticas, performance e escalabilidade."
+            "description": "I have expertise in C#, Dotnet Core, and ASP.NET Core, with solid experience in developing web applications and robust APIs. I'm accustomed to working with best practices, performance, and scalability."
         },
         {
             "name": "React",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
-            "description": "Tenho boa experiência com React, desenvolvendo interfaces modernas e funcionais. Ainda estou em constante aprendizado para aprimorar minhas habilidades na biblioteca."
+            "description": "I have good experience with React, developing modern and functional interfaces. I'm continuously learning to improve my skills with the library."
         },
         {
             "name": "PostgreSQL",
             "icon": "https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png",
-            "description": "Tenho conhecimento sólido em PostgreSQL, com experiência em modelagem de dados e consultas eficientes. Ainda busco aprofundar-me em aspectos avançados de performance e administração."
+            "description": "I have solid knowledge in PostgreSQL, with experience in data modeling and efficient queries. I'm still seeking to deepen my knowledge in advanced aspects of performance and administration."
         },
         {
             "name": "GNU Linux",
             "icon": "https://media.licdn.com/dms/image/C4E12AQELA0zJ-sxYxw/article-cover_image-shrink_600_2000/0/1575141578855?e=2147483647&v=beta&t=aRiIFIShe3jRnpnMkeDaEcepkWPXGwkDvjjOR7qyYNM",
-            "description": "Tenho boa experiência com GNU/Linux, especialmente com distribuições baseadas em Debian. Ainda estou explorando mais a fundo o ecossistema RHEL e seus derivados."
+            "description": "I have good experience with GNU/Linux, especially with Debian-based distributions. I'm still exploring the RHEL ecosystem and its derivatives in greater depth."
         },
         {
             "name": "Docker",
             "icon": "https://logopng.com.br/logos/docker-27.png",
-            "description": "Possuo domínio em Docker, com experiência na criação de containers, definição de imagens personalizadas e orquestração de ambientes isolados."
+            "description": "I have expertise in Docker, with experience in creating containers, defining custom images, and orchestrating isolated environments."
         },
         {
             "name": "Git",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png",
-            "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
+            "description": "Expertise in Git and GitHub, with practice in version control, branches, pull requests, and collaboration in development teams."
         },
         {
             "name": "GitHub",
             "icon": "https://logolook.net/wp-content/uploads/2022/12/GitHub-Logo.png",
-            "description": "Domínio em Git e GitHub, com prática em controle de versões, branches, pull requests e colaboração em equipes de desenvolvimento."
+            "description": "Expertise in Git and GitHub, with practice in version control, branches, pull requests, and collaboration in development teams."
         },
         {
             "name": "Python",
             "icon": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
-            "description": "Tenho boa experiência com Python, aplicando a linguagem em automações e scripts diversos. Ainda estou em constante evolução para dominar recursos mais avançados da linguagem."
+            "description": "I have good experience with Python, applying the language in various automations and scripts. I'm constantly evolving to master more advanced features of the language."
         }
     ],
     "location": "Brazil",
+    "english_level": "A2",
     "website": "https://hudsonventura.ddnsgeek.com",
     "linkedin": "https://www.linkedin.com/in/hudsonventura",
     "github": "https://github.com/hudsonventura",
@@ -122,7 +123,7 @@
             "degree": "Postgraduate Lato Sensu in Artificial Intelligence",
             "start": "2023-03-08",
             "end": "2024-04-29",
-            "description": "Description of Education B",
+            "description": "",
             "description_full": "Specialization focused on developing intelligent solutions with an emphasis on machine learning, deep learning, natural language processing, computer vision, and predictive analysis. The program covers languages like Python, the use of frameworks like TensorFlow and PyTorch, along with practical applications in automation and data science, exclusively using Python."
         },
         {
@@ -130,7 +131,7 @@
             "degree": "Postgraduate Lato Sensu in IT Management",
             "start": "2019-11-30",
             "end": "2021-01-05",
-            "description": "Description of Education A",
+            "description": "",
             "description_full": "Education focused on leadership and strategic management of Information Technology, with an emphasis on governance, project management, and team management."
         },
         {
@@ -138,7 +139,7 @@
             "degree": "Postgraduate Lato Sensu in Database Management",
             "start": "2018-04-06",
             "end": "2019-11-30",
-            "description": "Description of Education B",
+            "description": "",
             "description_full": "Specialized training in modeling, administration, and optimization of relational and non-relational databases. Covers technologies like Oracle, PostgreSQL, MongoDB, as well as topics like security, BI, performance tuning, and corporate data management."
         },
         {
@@ -146,7 +147,7 @@
             "degree": "Bachelor's Degree in Information Systems",
             "start": "2012-01-02",
             "end": "2018-03-23",
-            "description": "Description of Education A",
+            "description": "",
             "description_full": "Solid education in software development, programming logic, data structures, and system architecture. Also includes advanced knowledge in computer networks, information security, communication protocols, and management of computational environments."
         }
     ],

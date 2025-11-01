@@ -131,6 +131,7 @@ function Print({curriculum, strings} : {curriculum: Curriculum, strings: Strings
                             <Text style={styles.text}>• {new Date().getFullYear() - new Date(curriculum.birth_date).getFullYear()} {(strings as any)[10]}</Text>
                             <Text style={styles.text}>• {curriculum.location}</Text>
                             <Text style={styles.text}>• {curriculum.education_level}</Text>
+                            <Text style={styles.text}>• {(strings as any)[36]}: {curriculum.english_level}</Text>
 
                             <View style={styles.roleDescription}>
                                 <Text style={{ fontSize: 8, color: '#888' }}>
