@@ -12,7 +12,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Curriculum } from "./Curriculum";
 
 import { SiGmail } from "react-icons/si";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaWhatsapp, FaTelegram } from "react-icons/fa6";
 import StringsHandler from "./StringsHandler";
 
 
@@ -73,7 +73,6 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 								size: "sm",
 							})}
 						>
-							<span className="sr-only">Github icon</span>
 							<GitHubLogoIcon className="w-5 h-5" />
 						</a>
 						
@@ -87,7 +86,6 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 								size: "sm",
 							})}
 						>
-							<span className="sr-only">Linkedin icon</span>
 							<Linkedin size="20" />
 						</a>
 
@@ -100,7 +98,6 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 								size: "sm",
 							})}
 						>
-							<title>Clique para enviar um email para mim</title>
 							<SiGmail className="w-5 h-5" />
 						</a>
 
@@ -113,8 +110,19 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 								size: "sm",
 							})}
 						>
-							<title>Envelope</title>
 							<FaWhatsapp className="w-5 h-5" />
+						</a>
+
+						<a
+							rel="noreferrer noopener"
+							href={`https://t.me/${curriculum.phone}`}
+							target="_blank"
+							className={buttonVariants({
+								variant: "ghost",
+								size: "sm",
+							})}
+						>
+							<FaTelegram className="w-5 h-5" />
 						</a>
 					</div>
 				</CardFooter>
