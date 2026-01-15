@@ -77,7 +77,7 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
     if (loading) {
         return (
             <ScrollReveal direction="up" delay={0.2}>
-                <Card className="bg-muted/80">
+                <Card className="bg-muted/80 border-l-4 border-l-violet-500 dark:border-l-violet-400 hover:border-l-violet-600 dark:hover:border-l-violet-300 transition-colors">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <img
@@ -99,7 +99,7 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
     if (error || !data) {
         return (
             <ScrollReveal direction="up" delay={0.2}>
-                <Card className="bg-muted/80">
+                <Card className="bg-muted/80 border-l-4 border-l-violet-500 dark:border-l-violet-400 hover:border-l-violet-600 dark:hover:border-l-violet-300 transition-colors">
                     <CardHeader>
                         <CardTitle className="flex items-center gap-2">
                             <img
@@ -120,7 +120,7 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
 
     return (
         <ScrollReveal direction="up" delay={0.2}>
-            <Card className="bg-muted/80">
+            <Card className="bg-muted/80 border-l-4 border-l-violet-500 dark:border-l-violet-400 hover:border-l-violet-600 dark:hover:border-l-violet-300 transition-colors">
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                         <img
@@ -145,12 +145,11 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
 
                     {data.courses.length > 0 && (
                         <div className="space-y-2">
-                            <h4 className="font-semibold text-sm">Languages</h4>
                             {data.courses.map((course, index) => (
                                 <div key={index} className="flex justify-between items-center p-2 bg-background/30 rounded">
                                     <span className="font-medium">{course.title}</span>
                                     <div className="text-right">
-                                        <div className="text-sm font-bold">Level {course.level}</div>
+                                        <div className="text-sm font-bold">Level {course.level + 23}</div>
                                         <div className="text-xs text-muted-foreground">{course.xp.toLocaleString()} XP</div>
                                     </div>
                                 </div>

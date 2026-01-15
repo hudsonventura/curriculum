@@ -42,7 +42,7 @@ export const HowItWorks = ({ curriculum, strings, repos }: { curriculum: Curricu
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
 				<ScrollReveal direction="up" delay={0.2}>
-					<Card className="bg-muted/80">
+					<Card className="bg-muted/80 border-l-4 border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300 transition-colors">
 						<CardHeader>
 							<CardTitle className="grid gap-4 place-items-center">
 								<FaGithub className="w-12 h-12" />
@@ -53,7 +53,7 @@ export const HowItWorks = ({ curriculum, strings, repos }: { curriculum: Curricu
 					</Card>
 				</ScrollReveal>
 				<ScrollReveal direction="up" delay={0.3}>
-					<Card className="bg-muted/80">
+					<Card className="bg-muted/80 border-l-4 border-l-blue-500 dark:border-l-blue-400 hover:border-l-blue-600 dark:hover:border-l-blue-300 transition-colors">
 						<CardHeader>
 							<CardTitle className="grid gap-4 place-items-center">
 								<SiNuget className="w-12 h-12 text-[#0078d7]" />
@@ -69,7 +69,7 @@ export const HowItWorks = ({ curriculum, strings, repos }: { curriculum: Curricu
 					</Card>
 				</ScrollReveal>
 				<ScrollReveal direction="up" delay={0.4}>
-					<Card className="bg-muted/80">
+					<Card className="bg-muted/80 border-l-4 border-l-amber-500 dark:border-l-amber-400 hover:border-l-amber-600 dark:hover:border-l-amber-300 transition-colors">
 						<CardHeader>
 							<CardTitle className="grid gap-4 place-items-center">
 								<img src="https://www.python.org/static/favicon.ico" className="w-12 h-12" alt="Python Logo" />

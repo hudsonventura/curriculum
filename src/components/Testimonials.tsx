@@ -41,7 +41,13 @@ export const Testimonials = ({ repos, strings }: { repos: Repositories, strings:
 							.sort((a: any, b: any) => new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
 							.slice(0, 9)
 							.map((repo: any, index: number) => (
-								<Card key={index} className="max-w-md md:break-inside-avoid overflow-hidden">
+								<Card key={index} className={`max-w-md md:break-inside-avoid overflow-hidden border-l-4 transition-colors ${index % 6 === 0 ? 'border-l-cyan-500 dark:border-l-cyan-400 hover:border-l-cyan-600 dark:hover:border-l-cyan-300' :
+										index % 6 === 1 ? 'border-l-purple-500 dark:border-l-purple-400 hover:border-l-purple-600 dark:hover:border-l-purple-300' :
+											index % 6 === 2 ? 'border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300' :
+												index % 6 === 3 ? 'border-l-blue-500 dark:border-l-blue-400 hover:border-l-blue-600 dark:hover:border-l-blue-300' :
+													index % 6 === 4 ? 'border-l-rose-500 dark:border-l-rose-400 hover:border-l-rose-600 dark:hover:border-l-rose-300' :
+														'border-l-orange-500 dark:border-l-orange-400 hover:border-l-orange-600 dark:hover:border-l-orange-300'
+									}`}>
 									<CardHeader className="flex flex-row items-center gap-4 pb-2">
 										<div className="flex flex-col">
 											<CardTitle className="text-lg">

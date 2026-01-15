@@ -77,7 +77,10 @@ export const Features = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
-          <Card key={title}>
+          <Card key={title} className={`border-l-4 transition-colors ${features.findIndex(f => f.title === title) % 3 === 0 ? 'border-l-blue-500 dark:border-l-blue-400 hover:border-l-blue-600 dark:hover:border-l-blue-300' :
+              features.findIndex(f => f.title === title) % 3 === 1 ? 'border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300' :
+                'border-l-purple-500 dark:border-l-purple-400 hover:border-l-purple-600 dark:hover:border-l-purple-300'
+            }`}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader>

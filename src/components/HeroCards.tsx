@@ -43,7 +43,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
       </Card> */}
 
 			{/* Team */}
-			<Card className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+			<Card className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-l-4 border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300 transition-colors">
 				<CardHeader className="mt-8 flex justify-center items-center pb-2">
 					<img
 						src={curriculum.gravatar}
@@ -58,7 +58,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 
 				<CardContent className="text-center pb-2">
 					<p>
-					{(strings as any)[6]}
+						{(strings as any)[6]}
 					</p>
 				</CardContent>
 
@@ -75,7 +75,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 						>
 							<GitHubLogoIcon className="w-5 h-5" />
 						</a>
-						
+
 
 						<a
 							rel="noreferrer noopener"
@@ -103,7 +103,7 @@ export const HeroCards = ({ curriculum, strings }: { curriculum: Curriculum, str
 
 						<a
 							rel="noreferrer noopener"
-							href={`https://api.whatsapp.com/send?phone=${curriculum.phone}&text=Hi there, I would like to talk to you!`} 
+							href={`https://api.whatsapp.com/send?phone=${curriculum.phone}&text=Hi there, I would like to talk to you!`}
 							target="_blank"
 							className={buttonVariants({
 								variant: "ghost",

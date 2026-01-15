@@ -8,7 +8,7 @@
     "role2": "C# | React | PostgreSQL | GNU Linux",
     "skills": [
         {
-            "name": "C# / Dotnet Core / ASP.NET Core",
+            "name": "C# / Dotnet Core / ASP.NET",
             "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png",
             "description": "Possuo domínio em C#, Dotnet Core e ASPNET Core, com experiência sólida no desenvolvimento de aplicações web e APIs robustas. Estou habituado a trabalhar com boas práticas, performance e escalabilidade."
         },

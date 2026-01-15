@@ -94,11 +94,13 @@ export const Pricing = () => {
         {pricingList.map((pricing: PricingProps) => (
           <Card
             key={pricing.title}
-            className={
-              pricing.popular === PopularPlanType.YES
+            className={`border-l-4 transition-colors ${pricing.title === 'Free' ? 'border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300' :
+                pricing.title === 'Premium' ? 'border-l-blue-500 dark:border-l-blue-400 hover:border-l-blue-600 dark:hover:border-l-blue-300' :
+                  'border-l-purple-500 dark:border-l-purple-400 hover:border-l-purple-600 dark:hover:border-l-purple-300'
+              } ${pricing.popular === PopularPlanType.YES
                 ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
                 : ""
-            }
+              }`}
           >
             <CardHeader>
               <CardTitle className="flex item-center justify-between">

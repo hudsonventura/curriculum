@@ -8,7 +8,7 @@
     "role2": "C# | React | PostgreSQL | GNU Linux",
     "skills": [
         {
-            "name": "C# / Dotnet Core / ASP.NET Core",
+            "name": "C# / Dotnet Core / ASP.NET",
             "icon": "https://raw.githubusercontent.com/hudsonventura/SoftExpertAPI/main/src/dotnet_logo.png",
             "description": "I have expertise in C#, Dotnet Core, and ASP.NET Core, with solid experience in developing web applications and robust APIs. I'm accustomed to working with best practices, performance, and scalability."
         },
@@ -95,24 +95,17 @@
             "roles": [
                 {
                     "role": "IT Technician",
-                    "start": "2010-05-01",
+                    "start": "2009-01-03",
                     "end": "2010-11-22",
                     "description": "Technical lead in TV: electronics maintenance, networks, servers, automation, broadcasting, AV equipment, and computers.",
                     "description_full": "Technical lead for installation and maintenance of electronic equipment, networks, and operating systems at a TV station. Worked with broadcasting infrastructure, cabling, server maintenance, automation systems support, and operation of audiovisual equipment."
                 },
                 {
                     "role": "IT Technical Assistant",
-                    "start": "2009-01-02",
-                    "end": "2010-05-30",
-                    "description": "Installation and support for audio, video, and IT equipment, with supervised field technical support.",
-                    "description_full": "Assisted in the installation, maintenance, and support of audio, video, and IT equipment, providing technical field support under the supervision of technicians and engineers."
-                },
-                {
-                    "role": "Electronics Intern",
                     "start": "2007-01-02",
                     "end": "2009-01-02",
-                    "description": "",
-                    "description_full": ""
+                    "description": "Installation and support for audio, video, and IT equipment, with supervised field technical support.",
+                    "description_full": "Assisted in the installation, maintenance, and support of audio, video, and IT equipment, providing technical field support under the supervision of technicians and engineers."
                 }
             ]
         }

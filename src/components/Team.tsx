@@ -129,7 +129,11 @@ export const Team = () => {
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/80 relative mt-8 flex flex-col justify-center items-center"
+              className={`bg-muted/80 relative mt-8 flex flex-col justify-center items-center border-l-4 transition-colors ${teamList.findIndex(t => t.name === name) % 4 === 0 ? 'border-l-rose-500 dark:border-l-rose-400 hover:border-l-rose-600 dark:hover:border-l-rose-300' :
+                  teamList.findIndex(t => t.name === name) % 4 === 1 ? 'border-l-blue-500 dark:border-l-blue-400 hover:border-l-blue-600 dark:hover:border-l-blue-300' :
+                    teamList.findIndex(t => t.name === name) % 4 === 2 ? 'border-l-green-500 dark:border-l-green-400 hover:border-l-green-600 dark:hover:border-l-green-300' :
+                      'border-l-orange-500 dark:border-l-orange-400 hover:border-l-orange-600 dark:hover:border-l-orange-300'
+                }`}
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <img
