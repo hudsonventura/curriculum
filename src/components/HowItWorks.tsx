@@ -4,6 +4,7 @@ import { SiNuget } from "react-icons/si";
 import { Curriculum } from "./Curriculum";
 import StringsHandler from "./StringsHandler";
 import { ScrollReveal } from "./ScrollReveal";
+import { DuolingoStats } from "./DuolingoStats";
 
 
 
@@ -38,7 +39,7 @@ export const HowItWorks = ({ curriculum, strings, repos }: { curriculum: Curricu
 				</p>
 			</ScrollReveal>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
 				<ScrollReveal direction="up" delay={0.2}>
 					<Card className="bg-muted/80">
@@ -80,6 +81,9 @@ export const HowItWorks = ({ curriculum, strings, repos }: { curriculum: Curricu
 						</CardContent>
 					</Card>
 				</ScrollReveal>
+				<DuolingoStats
+					username={(curriculum as any).duolingo_username}
+				/>
 			</div>
 		</section>
 	);

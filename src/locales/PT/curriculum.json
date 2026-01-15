@@ -49,7 +49,7 @@
         }
     ],
     "location": "Cuiabá - MT",
-    "english_level": "A2",
+    "english_level": "B1",
     "website": "http://hudsonventura.ddnsgeek.com",
     "linkedin": "https://www.linkedin.com/in/hudsonventura",
     "github": "https://github.com/hudsonventura",
@@ -57,6 +57,7 @@
     "pypi": "https://pypi.org/user/hudsonventura",
     "phone": "65992327494",
     "email": "hudsonventura@outlook.com",
+    "duolingo_username": "hudsonventura",
     "companies": [
         {
             "name": "Amaggi Exp. e Imp. LTDA",
@@ -150,14 +151,11 @@
             "description": "",
             "description_full": "Formação sólida em desenvolvimento de software, lógica de programação, estruturas de dados e arquitetura de sistemas. Inclui também conhecimentos avançados em redes de computadores, segurança da informação, protocolos de comunicação e administração de ambientes computacionais."
         }
-        
-        
     ],
     "about": [
-        "Desenvolvedor Full Stack usando C#/ASP.Net Core e React", 
+        "Desenvolvedor Full Stack usando C#/ASP.Net Core e React",
         "Em busca de projetos desafiadores. Focado em resultados através da melhoria e automatização de processos e sistemas. Sempre estou buscando estudar coisas novas. Pela área de computação estar em constante mudanças, nem sempre consigo me aprofundar em determinados assuntos, mas tento pelo menos buscar os conceitos para saber quais tecnologias podem resolver meus problemas.",
-        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# / ASPNET Core e Python, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, Pipeline do Github, versionamento com Git, consumo de APIs, integração contínua e testes unitários e de integração. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.", 
+        "Atuando no desenvolvimento de aplicações web modernas, escaláveis e de alta performance. No backend, construo APIs RESTful robustas com C# / ASPNET Core e Python, integrando bancos de dados, autenticação, e lógica de negócio. No frontend, utilizo React para criar interfaces interativas, responsivas e com foco na experiência do usuário. Tenho familiaridade com práticas de DevOps, Pipeline do Github, versionamento com Git, consumo de APIs, integração contínua e testes unitários e de integração. Comprometido com boas práticas de código limpo, padrões de projeto e metodologias ágeis.",
         "Entusiasta de tecnologia, Linux e open source. Tenho vivência com uma ampla gama de ferramentas e plataformas, onde me sinto mais confortável para trabalhar, que são: Ubuntu, CentOS, Docker (Swarm e Compose), WSL2, Microsoft Active Directory/LDAP, Windows Server, NGINX, virtualização com Hyper-V, Proxmox, VirtualBox, VMWare e Linux KVM, Oracle Cloud, Oracle Database, PostgreSQL e Redis."
     ]
-
 }

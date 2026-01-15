@@ -20,6 +20,7 @@ export type Curriculum = {
 	location: string;
 	english_level: string;
 	about: string[];
+	duolingo_username?: string;
 }
 
 export type Company = {
