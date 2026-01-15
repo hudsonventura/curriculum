@@ -60,14 +60,15 @@
     "duolingo_username": "hudsonventura",
     "companies": [
         {
-            "name": "Amaggi Exp. e Imp. LTDA",
+            "name": "Amaggi Export and Import LTDA",
+            "subname": "A soybean producing company",
             "roles": [
                 {
                     "role": "Full Stack Developer and BPM Process Analyst",
                     "start": "2015-09-01",
                     "end": null,
-                    "description": "Full stack development (Python, C#, React) and BPM process analysis with SoftExpert, automation, integrations, and continuous improvement.",
-                    "description_full": "Hybrid role combining full stack development using Python, C#, and React to build robust front-end and back-end solutions. Experience with APIs, databases, automations, and system integrations. Simultaneously responsible for process analysis and modeling using the SoftExpert platform, with a focus on operational efficiency, BPMN mapping, automated flow deployment, and continuous improvement."
+                    "description": "Full stack development (C#, Python and React) and BPM process analysis with SoftExpert, automation, integrations, and continuous improvement.",
+                    "description_full": "Hybrid role combining full stack development using C#, Python and React to build robust front-end and back-end solutions. Experience with APIs, databases, automations, and system integrations. Simultaneously responsible for process analysis and modeling using the SoftExpert platform, with a focus on operational efficiency, BPMN mapping, automated flow deployment, and continuous improvement."
                 },
                 {
                     "role": "IT Technician",
@@ -79,7 +80,8 @@
             ]
         },
         {
-            "name": "Ericsson Gestão e Serviços, outsourced by Vivo",
+            "name": "Ericsson Management and Services",
+            "subname": "by Vivo Mobile Company",
             "roles": [
                 {
                     "role": "Electronics Technician",
@@ -92,6 +94,7 @@
         },
         {
             "name": "TVCA - Centro América Television",
+            "subname": "Television station",
             "roles": [
                 {
                     "role": "IT Technician",
@@ -121,7 +124,7 @@
             "description_full": "Specialization focused on developing intelligent solutions with an emphasis on machine learning, deep learning, natural language processing, computer vision, and predictive analysis. The program covers languages like Python, the use of frameworks like TensorFlow and PyTorch, along with practical applications in automation and data science, exclusively using Python."
         },
         {
-            "school": "Faculdade Futura - Institute of Science, Education, and Technology of Votuporanga",
+            "school": "Faculdade Futura - Institute of Education and Technology of Votuporanga",
             "degree": "Postgraduate Lato Sensu in IT Management",
             "start": "2019-11-30",
             "end": "2021-01-05",

@@ -382,7 +382,13 @@ function Print({ curriculum, strings }: { curriculum: Curriculum, strings: Strin
                                     curriculum.companies.map((company: Company, index: number) => (
                                         <View key={index} style={styles.timelineItem}>
                                             <View style={styles.timelineDot} />
-                                            <Text style={styles.companyName}>{company.name}</Text>
+                                            <Text style={styles.companyName}>{company.name}
+                                                {
+                                                    company.subname && (
+                                                        <Text style={styles.text}> {company.subname}</Text>
+                                                    )
+                                                }</Text>
+
 
                                             {
                                                 company.roles.map((role: Roles, index: number) => (
