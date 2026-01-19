@@ -1,6 +1,6 @@
 {
     "0": "About Me",
-    "1": "Contributions",
+    "1": "Contributions (Open Source)",
     "2": "Experiences and Education",
     "3": "Repositories",
     "4": "Contacts",
@@ -22,7 +22,7 @@
     "20": "experiences and education",
     "21": "My",
     "22": "contribuitions",
-    "23": "I actively contribute to the developer community by publishing libraries on PyPI and NuGet. These libraries are designed to solve real-world challenges and are focused on reusability, productivity, and best practices. Sharing solutions in the form of public packages allows me to not only support other developers, but also to continually learn from community feedback and evolve my own skills.",
+    "23": "I actively contribute to the developer community by publishing open source libraries on PyPI and NuGet. These libraries are designed to solve real-world challenges and are focused on reusability, productivity, and best practices. Sharing solutions in the form of public packages allows me to not only support other developers, but also to continually learn from community feedback and evolve my own skills.",
     "24": "Public Repositories on Github",
     "25": "I contribute to the Python community by publishing packages on PyPI and encouraging the sharing of solutions, in support of the Python community.",
     "26": "Unfortunately PyPI does not have an API for counting downloads and packages 😬",

@@ -1,6 +1,6 @@
 {
     "0": "Sobre Mim",
-    "1": "Contribuições",
+    "1": "Contribuições (Open Source)",
     "2": "Experiências e Educação",
     "3": "Repositórios",
     "4": "Contatos",
@@ -22,7 +22,7 @@
     "20": "experiências e escolaridade",
     "21": "Minhas",
     "22": "contribuições",
-    "23": "Contribuo ativamente com a comunidade de desenvolvedores por meio da publicação de bibliotecas no PyPI e no NuGet. Essas libs foram criadas para resolver desafios reais do dia a dia e são voltadas à reutilização, produtividade e boas práticas. Compartilhar soluções em forma de pacotes públicos me permite não apenas apoiar outros desenvolvedores, mas também aprender continuamente com o feedback da comunidade e evoluir minhas próprias habilidades",
+    "23": "Contribuo ativamente com a comunidade de desenvolvedores por meio da publicação de bibliotecas de código aberto (opensource) no PyPI e no NuGet. Essas libs foram criadas para resolver desafios reais do dia a dia e são voltadas à reutilização, produtividade e boas práticas. Compartilhar soluções em forma de pacotes públicos me permite não apenas apoiar outros desenvolvedores, mas também aprender continuamente com o feedback da comunidade e evoluir minhas próprias habilidades",
     "24": "Repositórios Públicos no Github",
     "25": "Contribuo com a comunidade Python publicando pacotes no PyPI e incentivando o compartilhamento de soluções, em apoio a comunidade Python.",
     "26": "Infelizmente o Pypi não tem uma API de contagem de downloads e pacotes 😬",
