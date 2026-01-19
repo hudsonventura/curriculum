@@ -4,7 +4,6 @@ import { SiNuget } from "react-icons/si";
 import { Curriculum } from "./Curriculum";
 import StringsHandler from "./StringsHandler";
 import { ScrollReveal } from "./ScrollReveal";
-import { DuolingoStats } from "./DuolingoStats";
 
 
 

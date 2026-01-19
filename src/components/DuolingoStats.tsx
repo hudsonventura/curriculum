@@ -149,7 +149,7 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
                                 <div key={index} className="flex justify-between items-center p-2 bg-background/30 rounded">
                                     <span className="font-medium">{course.title}</span>
                                     <div className="text-right">
-                                        <div className="text-sm font-bold">Level {course.level + 23}</div>
+                                        <div className="text-sm font-bold">Level {(course.level ?? 0) + 23}</div>
                                         <div className="text-xs text-muted-foreground">{course.xp.toLocaleString()} XP</div>
                                     </div>
                                 </div>

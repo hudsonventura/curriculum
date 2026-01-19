@@ -1,36 +1,6 @@
 import { PDFViewer, Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
 import { Company, Curriculum, Roles } from '../components/Curriculum';
 import StringsHandler from './StringsHandler';
-import { useEffect, useState } from 'react';
-
-interface DuolingoData {
-    username: string;
-    totalXp: number;
-    streak: number;
-    courses: Array<{
-        title: string;
-        xp: number;
-        level?: number;
-        cefrLevel?: string;
-    }>;
-}
-
-// Função global para converter nível Duolingo para CEFR (A1, A2, B1, B2, C1, C2)
-// Tabela de conversão - fácil de alterar os valores
-const getDuolingoCEFRLevel = (level: number): string => {
-    if (level >= 0 && level <= 9) return 'A1';
-    if (level >= 10 && level <= 19) return 'A1';
-    if (level >= 20 && level <= 29) return 'A1';
-    if (level >= 30 && level <= 59) return 'A2';
-    if (level >= 60 && level <= 79) return 'B1';
-    if (level >= 80 && level <= 99) return 'B1+';
-    if (level >= 100 && level <= 114) return 'B2';
-    if (level >= 115 && level <= 129) return 'B2+';
-    if (level >= 130 && level <= 149) return 'C1';
-    if (level >= 150) return 'C2';
-    return 'Unknown'; // Caso o nível esteja fora dos intervalos
-};
-
 
 const styles = StyleSheet.create({
     page: {
@@ -232,51 +202,6 @@ const styles = StyleSheet.create({
 });
 
 function Print({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) {
-    const [duolingoData, setDuolingoData] = useState<DuolingoData | null>(null);
-
-    useEffect(() => {
-        const fetchDuolingoData = async () => {
-            if (!curriculum.duolingo_username) return;
-
-            try {
-                const response = await fetch(
-                    `https://www.duolingo.com/2017-06-30/users?username=${curriculum.duolingo_username}`
-                );
-
-                if (!response.ok) return;
-
-                const result = await response.json();
-                const user = result.users[0];
-
-                const calculateLevel = (xp: number): number => {
-                    return Math.floor(Math.pow(xp / 60, 0.5));
-                };
-
-                const processedData: DuolingoData = {
-                    username: user.username,
-                    totalXp: user.totalXp || 0,
-                    streak: user.streak || 0,
-                    courses: user.courses?.map((course: any) => {
-                        const level = calculateLevel(course.xp);
-                        return {
-                            title: course.title,
-                            xp: course.xp,
-                            level: level + 23,
-                            cefrLevel: getDuolingoCEFRLevel(level + 23),
-                        };
-                    }) || [],
-                };
-
-                setDuolingoData(processedData);
-            } catch (err) {
-                console.error('Error fetching Duolingo data:', err);
-            }
-        };
-
-        fetchDuolingoData();
-    }, [curriculum.duolingo_username]);
-
-
 
     return (
         <div className="w-full h-screen">

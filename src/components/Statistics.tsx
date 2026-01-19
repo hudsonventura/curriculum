@@ -1,5 +1,4 @@
 import { Curriculum } from "./Curriculum";
-import { DuolingoStats } from "./DuolingoStats";
 import StringsHandler from "./StringsHandler";
 
 export const Statistics = ({ curriculum, strings }: { curriculum: Curriculum, strings: StringsHandler }) => {

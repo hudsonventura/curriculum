@@ -25,6 +25,7 @@ export type Curriculum = {
 
 export type Company = {
 	name: string;
+	subname?: string;
 	roles: Roles[];
 }
 
