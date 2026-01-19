@@ -145,7 +145,7 @@ export const DuolingoStats = ({ username, userId }: DuolingoStatsProps) => {
 
                     {data.courses.length > 0 && (
                         <div className="space-y-2">
-                            {data.courses.map((course, index) => (
+                            {data.courses.slice(0, 1).map((course, index) => (
                                 <div key={index} className="flex justify-between items-center p-2 bg-background/30 rounded">
                                     <span className="font-medium">{course.title}</span>
                                     <div className="text-right">

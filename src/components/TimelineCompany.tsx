@@ -17,6 +17,7 @@ export function TimelineCompany({ items }: { items: Company[] }) {
 					<div className="space-y-1">
 						<div>
 							<h3 className="font-bold text-xl">{item.name}</h3>
+							{item.subname && <p className="text-sm text-muted-foreground">{item.subname}</p>}
 						</div>
 
 						{/* Render subitems if they exist */}

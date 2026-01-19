@@ -317,51 +317,9 @@ function Print({ curriculum, strings }: { curriculum: Curriculum, strings: Strin
                                 <Text style={styles.text}>• {new Date().getFullYear() - new Date(curriculum.birth_date).getFullYear()} {(strings as any)[10]}</Text>
                                 <Text style={styles.text}>• {curriculum.location}</Text>
                                 <Text style={styles.text}>• {curriculum.education_level}</Text>
-
+                                <Text style={styles.text}>• English level: {curriculum.english_level}</Text>
                             </View>
 
-                            <View style={styles.cardContact}>
-                                <Text style={styles.cardTitle}>{(strings as any)[36]}</Text>
-
-
-                                {/* Duolingo dentro de Information */}
-                                {duolingoData && (
-                                    <>
-                                        <Text style={{ fontSize: 9, fontWeight: 'bold', color: '#2f855a', marginBottom: 6 }}>{(strings as any)[37]}</Text>
-
-                                        <View style={styles.duolingoStats}>
-                                            <View style={styles.duolingoStat}>
-                                                <Text style={styles.duolingoStatValue}>
-                                                    {duolingoData.courses.length > 0 && duolingoData.courses[0].level}
-                                                </Text>
-                                                <Text style={styles.duolingoStatLabel}>Duolingo Level</Text>
-                                            </View>
-                                            <View style={styles.duolingoStat}>
-                                                <Text style={styles.duolingoStatValue}> {duolingoData.courses.length > 0 && duolingoData.courses[0].cefrLevel
-                                                    ? duolingoData.courses[0].cefrLevel
-                                                    : '-'}</Text>
-                                                <Text style={styles.duolingoStatLabel}>English Level</Text>
-                                            </View>
-                                        </View>
-
-
-
-                                        <View style={styles.duolingoStats}>
-                                            <View style={styles.duolingoStat}>
-                                                <Text style={styles.duolingoStatValue}>{duolingoData.streak}</Text>
-                                                <Text style={styles.duolingoStatLabel}>Day Streak</Text>
-                                            </View>
-                                            <View style={styles.duolingoStat}>
-                                                <Text style={styles.duolingoStatValue}>{duolingoData.totalXp.toLocaleString()}</Text>
-                                                <Text style={styles.duolingoStatLabel}>Total XP</Text>
-                                            </View>
-
-                                        </View>
-
-
-                                    </>
-                                )}
-                            </View>
 
 
                             <View style={styles.roleDescription}>

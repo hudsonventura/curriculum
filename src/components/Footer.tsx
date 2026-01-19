@@ -84,7 +84,7 @@ export const Footer = ({ curriculum, strings }: { curriculum: Curriculum, string
 						{curriculum.name}
 					</a>
 				</h3>
-				<p className="text-sm text-muted-foreground mt-1">Credits to <a href="https://github.com/leoMirandaa" target="_blank" className="underline">Leo Miranda</a></p>
+				<p className="text-sm text-muted-foreground mt-1">Page style developed by <a href="https://github.com/leoMirandaa" target="_blank" className="underline">Leo Miranda</a></p>
 			</section>
 		</footer>
 	);
