@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Git pull
+        working-directory: /home/ubuntu/Servicos/curriculum
+        run: git pull
+
+      - name: Build Docker Compose
+        working-directory: /home/ubuntu/Servicos/curriculum
+        run: docker compose build
+
+      - name: Restart compose
+        working-directory: /home/ubuntu/Servicos/curriculum
+        run: docker compose down && docker compose up -d
