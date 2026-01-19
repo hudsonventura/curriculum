@@ -33,7 +33,7 @@ import Respositories from "./components/Repositories";
 function App() {
 
 
-	
+
 
 	const language = navigator.language || navigator.language;
 	const curriculum: Curriculum = {
@@ -55,11 +55,11 @@ function App() {
 	};
 	const strings = new StringsHandler(language === 'pt-BR' ? stringsPT : stringsEN);
 
-	
 
 
 
-    const [repos, setRepos] = useState<Respositories>( {
+
+	const [repos, setRepos] = useState<Respositories>({
 		github: [],
 		folower: [],
 		nugetLibs: [],
@@ -67,7 +67,7 @@ function App() {
 		pypiLibs: []
 	});
 
-    useEffect(() => {
+	useEffect(() => {
 		const fetchRepos = async () => {
 			try {
 				const response = await fetch("https://api.github.com/users/hudsonventura/repos");
@@ -77,7 +77,7 @@ function App() {
 				console.error("Error fetching repos:", error);
 			}
 		};
-	
+
 		const fetchFolowers = async () => {
 			try {
 				const response = await fetch("https://api.github.com/users/hudsonventura/followers");
@@ -87,7 +87,7 @@ function App() {
 				console.error("Error fetching followers:", error);
 			}
 		};
-	
+
 		const fetchNugetLibs = async () => {
 			try {
 				const response = await fetch("https://azuresearch-usnc.nuget.org/query?q=packageid:softexpertapi");
@@ -97,7 +97,7 @@ function App() {
 				console.error("Error fetching NuGet libs:", error);
 			}
 		};
-	
+
 		const fetchNugetLibsProfile = async () => {
 			try {
 				const response = await fetch("https://api-v2v3search-0.nuget.org/query?q=owner:hudsonventura");
@@ -107,7 +107,7 @@ function App() {
 				console.error("Error fetching NuGet profile:", error);
 			}
 		};
-	
+
 		fetchRepos();
 		fetchFolowers();
 		fetchNugetLibs();
@@ -115,20 +115,94 @@ function App() {
 	}, []);
 
 	return (
-		
+
 		<Router>
 			<Helmet>
-				<title>{`${curriculum.name} - ${curriculum.role} ${curriculum.role2}`}</title>
-				<meta name="description" content={`$${curriculum.role} ${curriculum.role2}`} />
+				{/* Basic Meta Tags */}
+				<html lang={language === 'pt-BR' ? 'pt-BR' : 'en'} />
+				<title>{`${curriculum.name} - ${curriculum.role} | Full Stack Developer Portfolio`}</title>
+				<meta name="description" content={`${curriculum.name} is a ${curriculum.role} specializing in ${curriculum.role2}. Experienced in building scalable web applications, APIs, and modern interfaces. View my portfolio, projects, and professional experience.`} />
 				<meta name="author" content={curriculum.name} />
-				<meta name="keywords" content={`${curriculum.name}, ${curriculum.nick}, ${curriculum.skills.map(skill => skill.name).join(", ")}, SoftExpert, SESuite`} />
+				<meta name="keywords" content={`${curriculum.name}, ${curriculum.nick}, Full Stack Developer, ${curriculum.skills.map(skill => skill.name).join(", ")}, Portfolio, Resume, CV, ${curriculum.location}, Software Engineer, Web Developer`} />
+				<meta name="robots" content="index, follow" />
+				<meta name="googlebot" content="index, follow" />
+				<link rel="canonical" href={curriculum.website} />
 
-				<meta property="og:title" content={`${curriculum.name} - ${curriculum.role} ${curriculum.role2}`} />
-				<meta property="og:description" content={`${curriculum.role} ${curriculum.role2}`} />
-				<meta property="og:type" content="website" />
+				{/* Open Graph / Facebook */}
+				<meta property="og:type" content="profile" />
 				<meta property="og:url" content={curriculum.website} />
-				<meta property="og:image" content="/Preview.png" />
-				<link rel="icon" type="image/ico" href="./src/assets/favicon.ico" />
+				<meta property="og:title" content={`${curriculum.name} - ${curriculum.role}`} />
+				<meta property="og:description" content={`${curriculum.role} specializing in ${curriculum.role2}. Building scalable web applications and modern solutions.`} />
+				<meta property="og:image" content={`${curriculum.website}/Preview.png`} />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content={`${curriculum.name} Portfolio`} />
+				<meta property="og:locale" content={language === 'pt-BR' ? 'pt_BR' : 'en_US'} />
+				<meta property="profile:first_name" content={curriculum.name.split(' ')[0]} />
+				<meta property="profile:last_name" content={curriculum.name.split(' ').slice(1).join(' ')} />
+				<meta property="profile:username" content={curriculum.nick} />
+
+				{/* Twitter Card */}
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:url" content={curriculum.website} />
+				<meta name="twitter:title" content={`${curriculum.name} - ${curriculum.role}`} />
+				<meta name="twitter:description" content={`${curriculum.role} specializing in ${curriculum.role2}. Building scalable web applications and modern solutions.`} />
+				<meta name="twitter:image" content={`${curriculum.website}/Preview.png`} />
+				<meta name="twitter:creator" content={`@${curriculum.nick}`} />
+
+				{/* Additional SEO */}
+				<meta name="theme-color" content="#1a365d" />
+				<meta name="msapplication-TileColor" content="#1a365d" />
+				<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+				{/* Structured Data - JSON-LD for Person */}
+				<script type="application/ld+json">
+					{JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "Person",
+						"name": curriculum.name,
+						"url": curriculum.website,
+						"image": curriculum.gravatar,
+						"jobTitle": curriculum.role,
+						"description": `${curriculum.role} specializing in ${curriculum.role2}`,
+						"email": curriculum.email,
+						"telephone": curriculum.phone,
+						"address": {
+							"@type": "PostalAddress",
+							"addressCountry": curriculum.location
+						},
+						"sameAs": [
+							curriculum.linkedin,
+							curriculum.github,
+							curriculum.website
+						],
+						"knowsAbout": curriculum.skills.map(skill => skill.name),
+						"alumniOf": curriculum.educations.map(edu => ({
+							"@type": "EducationalOrganization",
+							"name": edu.school
+						})),
+						"worksFor": {
+							"@type": "Organization",
+							"name": curriculum.companies[0]?.name || "Independent"
+						}
+					})}
+				</script>
+
+				{/* Structured Data - JSON-LD for WebSite */}
+				<script type="application/ld+json">
+					{JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "WebSite",
+						"name": `${curriculum.name} Portfolio`,
+						"url": curriculum.website,
+						"description": `Professional portfolio and resume of ${curriculum.name}, ${curriculum.role}`,
+						"author": {
+							"@type": "Person",
+							"name": curriculum.name
+						},
+						"inLanguage": language === 'pt-BR' ? 'pt-BR' : 'en'
+					})}
+				</script>
 			</Helmet>
 			<div className="App">
 				<Routes>
@@ -140,7 +214,7 @@ function App() {
 							<About curriculum={curriculum} strings={strings} />
 							<HowItWorks curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Features curriculum={curriculum} /> */}
-							
+
 							<Cta curriculum={curriculum} strings={strings} />
 							<Testimonials repos={repos} strings={strings} />
 							{/* <Team curriculum={curriculum} /> */}
@@ -149,11 +223,11 @@ function App() {
 							{/* <FAQ curriculum={curriculum} /> */}
 							{/* <Services curriculum={curriculum} /> */}
 							<Footer curriculum={curriculum} strings={strings} />
-							<ScrollToTop /> 
+							<ScrollToTop />
 							<ConstellationBackground />
 						</>
 					} />
-					<Route path="/Print" element={<Print curriculum={curriculum} strings={strings} />} /> 
+					<Route path="/Print" element={<Print curriculum={curriculum} strings={strings} />} />
 					<Route path="/Preview" element={<Preview />} />
 				</Routes>
 			</div>
