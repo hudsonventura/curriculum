@@ -79,7 +79,8 @@
             ]
         },
         {
-            "name": "Ericsson Gestão e Serviços, terceirizado Vivo",
+            "name": "Ericsson Gestao e Servicos de Telecomunicações LTDA",
+            "subname": "terceirizada Operadora Vivo",
             "roles": [
                 {
                     "role": "Técnico em Eletrônica",
@@ -91,7 +92,8 @@
             ]
         },
         {
-            "name": "TVCA - Televisão Centro América",
+            "name": "Televisão Centro América LTDA",
+            "subname": "afiliada Rede Globo",
             "roles": [
                 {
                     "role": "Técnico em Eletrônica e Informática",
@@ -102,17 +104,10 @@
                 },
                 {
                     "role": "Auxiliar Técnico",
-                    "start": "2009-01-02",
+                    "start": "2007-01-02",
                     "end": "2010-05-30",
                     "description": "Instalação e suporte de áudio, vídeo e informática, com apoio técnico em campo supervisionado.",
                     "description_full": "Auxiliei na instalação, manutenção e suporte de equipamentos de áudio, vídeo e informática, prestando apoio técnico em campo sob supervisão de técnicos e engenheiros."
-                },
-                {
-                    "role": "Estagiário em Eletrônica",
-                    "start": "2007-01-02",
-                    "end": "2009-01-02",
-                    "description": "",
-                    "description_full": ""
                 }
             ]
         }
