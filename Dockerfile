@@ -4,12 +4,11 @@ FROM node:18 AS build
 # Define o diretório de trabalho no container
 WORKDIR /app
 
-# Copia o package.json
-COPY package.json ./
+# Copia o package.json e package-lock.json
+COPY package*.json ./
 
-
-# Instala as dependências
-RUN npm install
+# Instala as dependências (força reinstalação do esbuild para a plataforma correta)
+RUN npm ci --force || npm install --force
 
 # Copia os diretórios public e src
 COPY public/ ./public

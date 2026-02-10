@@ -10,7 +10,6 @@ import { ScrollToTop } from "./components/ScrollToTop";
 
 import { Testimonials } from "./components/Testimonials";
 import { TravelTunnel } from "./components/TravelTunnel";
-import { BlackBackground } from "./components/BlackBackground";
 import { CardScanner } from "./components/CardScanner";
 import "./App.css";
 
