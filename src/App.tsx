@@ -11,6 +11,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import { Testimonials } from "./components/Testimonials";
 import { TravelTunnel } from "./components/TravelTunnel";
 import { BlackBackground } from "./components/BlackBackground";
+import { CardScanner } from "./components/CardScanner";
 import "./App.css";
 
 import Print from "./components/Print";
@@ -213,6 +214,7 @@ function App() {
 							<Navbar curriculum={curriculum} strings={strings} />
 							<Hero curriculum={curriculum} strings={strings} />
 							{/* <Sponsors curriculum={curriculum} /> */}
+							<CardScanner />
 							<About curriculum={curriculum} strings={strings} />
 							<HowItWorks curriculum={curriculum} repos={repos} strings={strings} />
 							{/* <Features curriculum={curriculum} /> */}
