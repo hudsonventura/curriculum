@@ -19,15 +19,15 @@ export const TravelTunnel = () => {
             scale: 30.0,
             heightMultiplier: 3.6,
             detailStrength: 0.27,
-            valleyWidth: 35.0,
+            valleyWidth: 33.0,
 
             // Visuals
             flatShading: false,
             wireframe: false,
 
             // Colors
-            bgColor: '#b6c2cc',
-            fogDensity: 0.0104,
+            bgColor: '#0d74c9ff',
+            fogDensity: 0.0066,
             groundColor: '#1a1a1a',
             ceilingColor: '#5e6a75',
 
@@ -38,7 +38,7 @@ export const TravelTunnel = () => {
 
         // === SCENE INIT ===
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(params.bgColor);
+        scene.background = null; // Transparent to show constellation through sky
         scene.fog = new THREE.FogExp2(params.bgColor, params.fogDensity);
 
         const camera = new THREE.PerspectiveCamera(
@@ -49,12 +49,14 @@ export const TravelTunnel = () => {
         );
         camera.position.set(0, 0, 40);
 
-        // Renderer setup with high precision and dithering support to fix banding
+        // Renderer setup with alpha for transparency
         const renderer = new THREE.WebGLRenderer({
             antialias: true,
             powerPreference: "high-performance",
-            precision: "highp"
+            precision: "highp",
+            alpha: true // Enable transparency
         });
+        renderer.setClearColor(0x000000, 0); // Transparent background
         renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         containerRef.current.appendChild(renderer.domElement);
@@ -65,6 +67,42 @@ export const TravelTunnel = () => {
 
         const camLight = new THREE.PointLight(0xffaa00, params.camLightInt, 120, 1.5);
         scene.add(camLight);
+
+        // === GRADIENT BACKGROUND ===
+        // Create a large plane with gradient shader for background
+        const gradientGeometry = new THREE.PlaneGeometry(500, 300);
+        const gradientMaterial = new THREE.ShaderMaterial({
+            uniforms: {
+                topColor: { value: new THREE.Color(0x000000) },
+                bottomColor: { value: new THREE.Color(0x000000) }, // Gray color
+            },
+            vertexShader: `
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform vec3 topColor;
+                uniform vec3 bottomColor;
+                varying vec2 vUv;
+                void main() {
+                    // Gradient from top (transparent) to bottom (more opaque)
+                    float alpha = 0.2 + vUv.y * 0.6; // 20% to 80% opacity
+                    vec3 color = mix(topColor, bottomColor, vUv.y);
+                    gl_FragColor = vec4(color, alpha);
+                }
+            `,
+            transparent: true,
+            depthWrite: false,
+            side: THREE.DoubleSide,
+        });
+
+        const gradientPlane = new THREE.Mesh(gradientGeometry, gradientMaterial);
+        gradientPlane.position.z = 20; // Closer to camera
+        gradientPlane.position.y = 0;
+        scene.add(gradientPlane);
 
         // === NOISE & GEOMETRY ===
         const noise2D = createNoise2D();
@@ -264,7 +302,7 @@ export const TravelTunnel = () => {
 
             const f4 = gui.addFolder('Colors & Atmosphere');
             const updateColors = () => {
-                (scene.background as THREE.Color).set(params.bgColor);
+                // (scene.background as THREE.Color).set(params.bgColor); // Keep transparent
                 (scene.fog as THREE.FogExp2).color.set(params.bgColor);
                 (scene.fog as THREE.FogExp2).density = params.fogDensity;
                 hemiLight.intensity = params.ambientInt;
@@ -310,8 +348,8 @@ export const TravelTunnel = () => {
             <div
                 className="absolute top-0 left-0 w-full pointer-events-none"
                 style={{
-                    height: '800px',
-                    background: 'linear-gradient(to bottom, hsl(var(--background)) 0%, transparent 100%)',
+                    height: '100%',
+                    background: 'linear-gradient(to bottom, transparent 0%, rgba(74, 85, 104, 0.4) 30%, rgba(74, 85, 104, 0.7) 60%, rgba(74, 85, 104, 0.9) 100%)',
                     zIndex: 2
                 }}
             />

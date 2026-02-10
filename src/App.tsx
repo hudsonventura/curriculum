@@ -228,7 +228,6 @@ function App() {
 							{/* <Services curriculum={curriculum} /> */}
 							<div className="relative min-h-screen">
 								<Footer curriculum={curriculum} strings={strings} />
-								<BlackBackground />
 								<TravelTunnel />
 							</div>
 							<ScrollToTop />
