@@ -18,11 +18,10 @@ export const Footer = ({ curriculum, strings }: { curriculum: Curriculum, string
 	};
 
 	return (
-		<footer id="footer">
-			<hr className="w-11/12 mx-auto" />
+		<footer id="footer" className="relative z-10">
 
 			<ScrollReveal direction="up" delay={0.1}>
-				<section className="container py-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-8">
+				<section className="container py-20 flex flex-col md:flex-row justify-around items-start gap-12">
 
 
 					<div className="flex flex-col gap-2">

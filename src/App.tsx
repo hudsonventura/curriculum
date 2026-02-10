@@ -9,6 +9,8 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 import { Testimonials } from "./components/Testimonials";
+import { TravelTunnel } from "./components/TravelTunnel";
+import { BlackBackground } from "./components/BlackBackground";
 import "./App.css";
 
 import Print from "./components/Print";
@@ -222,7 +224,11 @@ function App() {
 							{/* <Newsletter curriculum={curriculum} /> */}
 							{/* <FAQ curriculum={curriculum} /> */}
 							{/* <Services curriculum={curriculum} /> */}
-							<Footer curriculum={curriculum} strings={strings} />
+							<div className="relative min-h-screen">
+								<Footer curriculum={curriculum} strings={strings} />
+								<BlackBackground />
+								<TravelTunnel />
+							</div>
 							<ScrollToTop />
 							<ConstellationBackground />
 						</>
