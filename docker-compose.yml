@@ -1,11 +1,21 @@
   
 services:
+
   frontend:
     build:
-      context: ./
+      context: ./front/
       dockerfile: Dockerfile
     ports:
       - "5173:4173"
+    networks:
+      - servicos_rede-nginx
+
+  api:
+    build:
+      context: ./api/
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
     networks:
       - servicos_rede-nginx
 
