@@ -266,7 +266,7 @@ export const TravelTunnel = () => {
 
         // === GUI ===
         let gui: GUI | null = null;
-        if (guiContainerRef.current !== null) {
+        if (guiContainerRef.current == null) {
             gui = new GUI({ container: guiContainerRef.current, width: 320 });
             gui.title("Tunnel Controls");
 

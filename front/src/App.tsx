@@ -114,6 +114,9 @@ function App() {
 		fetchFolowers();
 		fetchNugetLibs();
 		fetchNugetLibsProfile();
+
+		// Register visit on the backend
+		fetch("https://hudsonventura.ddnsfree.com:5432/status?check=1").catch((err) => console.error("Error registering visit:", err));
 	}, []);
 
 	return (

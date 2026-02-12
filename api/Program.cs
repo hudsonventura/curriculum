@@ -1,10 +1,25 @@
+using api;
+using Microsoft.EntityFrameworkCore;
+
+// Load .env file from the working directory into environment variables
+DotNetEnv.Env.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+
+
+
 var app = builder.Build();
+
+// Apply pending migrations automatically at startup
+using (var db = new DBContext())
+{
+    db.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -16,24 +31,27 @@ app.UseHttpsRedirection();
 
 
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/status", (HttpContext context, string? check) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var ip = context.Request.Headers["X-Forwarded-For"].FirstOrDefault()
+             ?? context.Connection.RemoteIpAddress?.ToString()
+             ?? "unknown";
+
+    Visit visit = new Visit()
+    {
+        Ip = ip,
+        Check = check
+    };
+
+    using (DBContext dBContext = new DBContext())
+    {
+        dBContext.Visits.Add(visit);
+        dBContext.SaveChanges();
+    }
+    return Results.Ok(visit);
+
+});
 
 app.Run();
 
