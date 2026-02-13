@@ -1,21 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { Moon, Sun } from "lucide-react";
-import { useState } from "react";
 
 export function ModeToggle() {
-	const { setTheme } = useTheme();
+	const { theme, setTheme } = useTheme();
 
-	const [internalTheme, setInternalTheme] = useState("light");
+	const resolvedTheme = theme === "system"
+		? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+		: theme;
+
 	const toogleTheme = () => {
-		if(internalTheme === "light"){
+		if (resolvedTheme === "light") {
 			setTheme("dark");
-			setInternalTheme("dark");
-
-		}
-		if (internalTheme === "dark") {
+		} else {
 			setTheme("light");
-			setInternalTheme("light");
 		}
 	};
 
