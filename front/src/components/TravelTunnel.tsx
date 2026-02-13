@@ -1,11 +1,9 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { createNoise2D } from 'simplex-noise';
-import GUI from 'lil-gui';
 
 export const TravelTunnel = () => {
     const containerRef = useRef<HTMLDivElement>(null);
-    const guiContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (!containerRef.current) return;
@@ -264,60 +262,7 @@ export const TravelTunnel = () => {
 
         animate();
 
-        // === GUI ===
-        let gui: GUI | null = null;
-        if (guiContainerRef.current !== undefined) {
-            gui = new GUI({ container: guiContainerRef.current!, width: 320 });
-            gui.title("Tunnel Controls");
 
-            const f1 = gui.addFolder('Flight');
-            f1.add(params, 'speed', 0, 50).name('Speed');
-
-            const f2 = gui.addFolder('Visuals');
-            f2.add(params, 'showCeiling').name('Show Ceiling').onChange((v: boolean) => {
-                chunks.forEach(c => (c as any).userData.meshCeil.visible = v);
-            });
-            f2.add(params, 'flatShading').name('Flat Shading').onChange((v: boolean) => {
-                chunks.forEach(c => {
-                    (c as any).userData.meshGround.material.flatShading = v;
-                    (c as any).userData.meshGround.material.needsUpdate = true;
-                    (c as any).userData.meshCeil.material.flatShading = v;
-                    (c as any).userData.meshCeil.material.needsUpdate = true;
-                });
-                chunks.forEach(c => updateChunk(c));
-            });
-            f2.add(params, 'wireframe').name('Wireframe').onChange((v: boolean) => {
-                chunks.forEach(c => {
-                    (c as any).userData.meshGround.material.wireframe = v;
-                    (c as any).userData.meshCeil.material.wireframe = v;
-                });
-            });
-
-            const f3 = gui.addFolder('Terrain Generator');
-            const refresh = () => chunks.forEach(c => updateChunk(c));
-            f3.add(params, 'scale', 10, 150).name('Noise Scale').onChange(refresh);
-            f3.add(params, 'heightMultiplier', 1, 20).name('Height').onChange(refresh);
-            f3.add(params, 'detailStrength', 0, 1).name('Detail').onChange(refresh);
-            f3.add(params, 'valleyWidth', 5, 50).name('Valley Width').onChange(refresh);
-
-            const f4 = gui.addFolder('Colors & Atmosphere');
-            const updateColors = () => {
-                // (scene.background as THREE.Color).set(params.bgColor); // Keep transparent
-                (scene.fog as THREE.FogExp2).color.set(params.bgColor);
-                (scene.fog as THREE.FogExp2).density = params.fogDensity;
-                hemiLight.intensity = params.ambientInt;
-                camLight.intensity = params.camLightInt;
-                chunks.forEach(c => {
-                    (c as any).userData.meshGround.material.color.set(params.groundColor);
-                    (c as any).userData.meshCeil.material.color.set(params.ceilingColor);
-                });
-            };
-            f4.addColor(params, 'bgColor').name('Background').onChange(updateColors);
-            f4.addColor(params, 'groundColor').name('Ground Color').onChange(updateColors);
-            f4.addColor(params, 'ceilingColor').name('Ceiling Color').onChange(updateColors);
-            f4.add(params, 'fogDensity', 0, 0.1).name('Fog Density').onChange(updateColors);
-            f4.add(params, 'camLightInt', 0, 3).name('Light Intensity').onChange(updateColors);
-        }
 
         // Handle resize
         const handleResize = () => {
@@ -333,7 +278,7 @@ export const TravelTunnel = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
             cancelAnimationFrame(animationId);
-            if (gui) gui.destroy();
+
             if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
                 containerRef.current.removeChild(renderer.domElement);
             }
@@ -353,7 +298,7 @@ export const TravelTunnel = () => {
                     zIndex: 2
                 }}
             />
-            <div ref={guiContainerRef} className="absolute bottom-5 right-5 z-10" />
+
         </div>
     );
 };
