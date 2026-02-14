@@ -116,7 +116,7 @@ function App() {
 		fetchNugetLibsProfile();
 
 		// Register visit on the backend
-		fetch("http://hudsonventura.ddnsfree.com:5000/status?check=1").catch((err) => console.error("Error registering visit:", err));
+		fetch("https://api.hudsonventura.ddnsfree.com/status?check=1").catch((err) => console.error("Error registering visit:", err));
 	}, []);
 
 	return (
